@@ -1,1497 +1,1628 @@
 <!doctype html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"
-        />
-        <title>Satyendra Choudhary</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <style>
-            /********************************************
-            * 	reset from
-            * 	http://meyerweb.com/eric/tools/css/reset/
-            *******************************************/
-            
-            html,
-            body,
-            div,
-            span,
-            applet,
-            object,
-            iframe,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p,
-            blockquote,
-            pre,
-            a,
-            abbr,
-            acronym,
-            address,
-            big,
-            cite,
-            code,
-            del,
-            dfn,
-            em,
-            img,
-            ins,
-            kbd,
-            q,
-            s,
-            samp,
-            small,
-            strike,
-            strong,
-            sub,
-            sup,
-            tt,
-            var,
-            b,
-            u,
-            i,
-            center,
-            dl,
-            dt,
-            dd,
-            ol,
-            ul,
-            li,
-            fieldset,
-            form,
-            label,
-            legend,
-            table,
-            caption,
-            tbody,
-            tfoot,
-            thead,
-            tr,
-            th,
-            td,
-            article,
-            aside,
-            canvas,
-            details,
-            embed,
-            figure,
-            figcaption,
-            footer,
-            header,
-            hgroup,
-            menu,
-            nav,
-            output,
-            ruby,
-            section,
-            summary,
-            time,
-            mark,
-            audio,
-            video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                vertical-align: baseline;
-            }
-            
-            article,
-            aside,
-            details,
-            figcaption,
-            figure,
-            footer,
-            header,
-            hgroup,
-            menu,
-            nav,
-            section {
-                display: block;
-            }
-            
-            body {
-                line-height: 1;
-            }
-            
-            ol,
-            ul {
-                list-style: none;
-            }
-            
-            blockquote,
-            q {
-                quotes: none;
-            }
-            
-            blockquote:before,
-            blockquote:after,
-            q:before,
-            q:after {
-                content: none;
-            }
-            
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-            
-            
-            /****************
-            *	COMMONS
-            ****************/
-            
-            body,
-            html {
-                font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                font-size: 13px;
-                color: #40484f;
-                font-weight: 400;
-                letter-spacing: 0;
-                line-height: 1.46153846;
-                text-align: left;
-                -webkit-text-size-adjust: 100%;
-            }
-            
-            p {
-                display: block;
-                margin-bottom: 1.3em;
-            }
-            
-            a {
-                color: #0095ff;
-                text-decoration: none;
-            }
-            
-            a:hover {
-                color: #0c65a5;
-                text-decoration: underline;
-            }
-            
-            ul {
-                margin-top: 1rem;
-            }
-            
-            li {
-                list-style-type: square;
-                list-style-position: outside;
-                margin-left: 1.3em;
-            }
-            
-            .highlights>li>p {
-                margin-bottom: 0.5em;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.67rem;
-            }
-            
-            h3 {
-                font-size: 1.27rem;
-            }
-            
-            em {
-                color: #757575;
-            }
-            
-            blockquote {
-                margin-bottom: 1em;
-            }
-            
-            strong {
-                font-weight: 700;
-            }
-            
-            
-            /* main container */
-            
-            #resume {
-                padding: 1rem;
-                margin-top: 2rem;
-            }
-            
-            
-            /* every section wrapper */
-            
-            .section {
-                margin-bottom: 1rem;
-            }
-            
-            section .location {
-                margin-right: .5em;
-                color: #606d76;
-                font-weight: 700;
-            }
-            
-            #contact {
-                margin-top: .5rem;
-            }
-            
-            #profiles .item {
-                padding: 0;
-            }
-            
-            #header>#profiles,
-            #header>#contact,
-            #skills,
-            #languages,
-            #interests {
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-flow: row wrap;
-                flex-flow: row wrap;
-                -webkit-justify-content: flex-start;
-                justify-content: flex-start;
-            }
-            
-            #header>div {
-                line-height: 1.5;
-            }
-            
-            #header>div>div {
-                margin-right: 1.2em;
-            }
-            
-            #header h1.name {
-                font-size: 2.8rem;
-                font-weight: 100;
-                line-height: 100%;
-            }
-            
-            #header h2.label {
-                color: #202931;
-                font-size: 1.47rem;
-                font-weight: 300;
-            }
-            
-            #header .picture {
-                width: 11em;
-                float: right;
-                border-radius: 4px;
-            }
-            
-            .main-summary {
-                background: #f1f8ff;
-                padding: 1.2em 1em;
-                margin-top: 1rem;
-            }
-            
-            .main-summary p {
-                margin: .15em 0 0;
-            }
-            
-            h2.section-title {
-                display: inline-block;
-                background: #fff;
-                padding: 0 1em 0.3em 0;
-                color: #ff6d1f;
-                text-transform: uppercase;
-                font-weight: 600;
-                border: none;
-                font-size: .9rem;
-            }
-            
-            .section>header {
-                position: relative;
-            }
-            
-            .fa {
-                margin-right: 0.25em;
-            }
-            
-            .section>header::after {
-                position: absolute;
-                left: 0;
-                top: .7em;
-                height: 1px;
-                background: #ccc;
-                content: "";
-                width: 100%;
-                z-index: -100;
-                display: block;
-            }
-            
-            .section.main-summary>section {
-                margin: 0;
-            }
-            
-            .section>section>header {
-                font-size: 1.38rem;
-                position: relative;
-                margin-top: .7em;
-            }
-            
-            .section>section>header:first-of-type {
-                margin: 0;
-            }
-            
-            .section>section>header .space-left {
-                position: absolute;
-                left: -1.56rem;
-                top: 5px;
-                color: #aaa;
-                line-height: 1;
-                opacity: 0;
-            }
-            
-            .position,
-            .company,
-            .organization,
-            .institution,
-            .date,
-            .area,
-            .studyType,
-            .title,
-            .awarder {
-                display: inline;
-            }
-            
-            .position,
-            .studyType,
-            .area,
-            .title,
-            .language,
-            .name {
-                font-weight: 600;
-            }
-            
-            .company::before,
-            .institution::before,
-            .organization::before,
-            .awarder::before {
-                content: "at "
-            }
-            
-            .company,
-            .institution,
-            .organization,
-            .awarder {
-                color: #606d76;
-                font-weight: 400;
-            }
-            
-            .section header .date {
-                font-size: 1rem;
-                display: inline-table;
-                padding: .1em 0;
-                font-weight: 600;
-            }
-            
-            ul.keywords,
-            ul.courses {
-                margin-top: .5em;
-            }
-            
-            ul.keywords li,
-            ul.courses li {
-                display: inline-block;
-                margin: 2px 2px 2px 0;
-                padding: 4px 5px 5px;
-                font-size: .9rem;
-                line-height: 1;
-                text-transform: lowercase;
-                color: #3e6d8e;
-                background-color: #dfeaf1;
-                border: 0 solid #dfeaf1;
-                white-space: nowrap;
-            }
-            
-            ul.keywords li:hover,
-            ul.courses li:hover {
-                background: #dfeaf0;
-            }
-            
-            .item {
-                padding: .5em 0;
-            }
-            
-            .gpa {
-                padding-bottom: .5em;
-            }
-            
-            .fa.social {
-                font-size: 1.1em;
-            }
-            
-            
-            /* Social Media Brand Colors */
-            
-            .google-plus {
-                color: #dd4b39;
-            }
-            
-            .tumblr {
-                color: #32506d;
-            }
-            
-            .foursquare {
-                color: #0072b1;
-            }
-            
-            .facebook {
-                color: #3b5998;
-            }
-            
-            .linkedin {
-                color: #007bb6;
-            }
-            
-            .pinterest {
-                color: #cb2027;
-            }
-            
-            .dribbble {
-                color: #ea4c89;
-            }
-            
-            .instagram {
-                color: #517fa4;
-            }
-            
-            .twitter {
-                color: #00aced;
-            }
-            
-            .soundcloud {
-                color: #ff3a00;
-            }
-            
-            .wordpress {
-                color: #21759b;
-            }
-            
-            .youtube {
-                color: #bb0000;
-            }
-            
-            .github {
-                color: #171515;
-            }
-            
-            .stack-overflow {
-                color: #828386;
-                position: relative;
-            }
-            
-            .flickr {
-                color: #ff0084;
-            }
-            
-            .stack-overflow::after {
-                position: absolute;
-                left: 0;
-                content: '\f16c';
-                color: #f68a1f;
-                overflow: hidden;
-                height: 100%;
-            }
-            
-            .telegram {
-                color: #2291c3;
-            }
-            
-            #languages .item,
-            #skills .item,
-            #interests .item {
-                width: 15em;
-                padding: 0 .5em .5em 0;
-                border-bottom: none;
-            }
-            
-            #skills .item {
-                width: 16em;
-            }
-            
-            #skills .item .keywords {
-                width: 15em;
-            }
-            
-            
-            /* Skill chart */
-            
-            .level {
-                margin-bottom: .5em;
-            }
-            
-            .level .bar {
-                border: 1px solid #ddd;
-                display: block;
-                width: 10em;
-                height: 5px;
-                position: relative;
-            }
-            
-            .level .bar::after {
-                position: absolute;
-                content: " ";
-                top: 0;
-                left: 0;
-                background: black;
-                height: 5px;
-            }
-            
-            .level.beginner .bar::after {
-                background: #EB5F51;
-                width: 2.5em;
-            }
-            
-            .level.intermediate .bar::after {
-                background: #ffdf1f;
-                width: 5em;
-            }
-            
-            .level.advanced .bar::after,
-            .level.fluent .bar::after {
-                background: #5CB85C;
-                width: 7.5em;
-            }
-            
-            .level.master .bar::after,
-            .level.native.speaker .bar::after {
-                background: #59C596;
-                width: 10em;
-            }
-            
-            #references .item {
-                padding-left: .5em;
-                border-left: 5px solid #ff6d1f;
-            }
-            
-            .toggle-item {
-              visibility: hidden;
-            }
-            
-            /******************
-            *	HELPER CLASSES
-            ******************/
-            
-            .clear::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            
-            .display {
-                display: block;
-                opacity: 1 !important;
-            }
-            
-            .margin1 {
-                margin-bottom: .5rem;
-            }
-            
-            
-            /****************
-            *		TABLET
-            ****************/
-            
-            @media screen and (min-width: 602px) {
-                #resume {
-                    width: 80%;
-                    margin: 0 auto;
-                }
-            }
-            
-            
-            /****************
-            *		LAPTOP
-            ****************/
-            
-            @media screen and (min-width: 1025px) {
-                li {
-                    margin-left: 1.5em;
-                }
-                #resume {
-                    width: 820px;
-                    margin: 2rem auto;      
-                }
-                .section>section>header .space-left {
-                    opacity: 1;
-                    cursor: pointer;
-                }
-                .section>section {
-                    margin-left: 1.67rem;
-                }
-                .toggle-item {
-                    transform: translate(-9999px);
-                }
-                .toggle-item+label {
-                    display: block;
-                    margin-top: -16px;
-                }
-                .toggle-item:checked+label:after {
-                    content: '\f0d7';
-                }
-                .toggle-item+label:after {
-                    float: left;
-                    cursor: pointer;
-                    margin-left: -20px;
-                    color: #aaa;
-                    font-size: 16px;
-                    content: '\f0da';
-                    font-family: Fontawesome;
-                }
-                .toggle-item~.item {
-                    height: 0;
-                    opacity: 0;
-                }
-                .toggle-item:checked~.item {
-                    height: auto;
-                    opacity: 1;
-                    transition: all .5s linear;
-                }
-                .company::before,
-                .institution::before,
-                .organization::before,
-                .awarder::before {
-                    content: "| ";
-                }
-                .header-left {
-                    float: left;
-                    width: 70%;
-                    word-break: normal;
-                }
-                .section header .date {
-                    float: right;
-                    padding: .2em;
-                }
-                .display {
-                    display: none;
-                }
-                .display:not(.none) {
-                    display: block;
-                }
-            }
-            
-            @media print {
-                #resume {
-                    margin: 0;
-                    padding: 0;
-                    -ms-word-wrap: break-word;
-                    word-wrap: break-word;
-                    line-height: 1.3;
-                    /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
-                }
-                @page {
-                    margin: 1cm 1.4cm;
-                }
-                .item-count {
-                    display: none;
-                }
-                .company::before,
-                .institution::before,
-                .organization::before,
-                .awarder::before {
-                    content: "at ";
-                }
-                .main-summary {
-                    padding: 2rem 0;
-                }
-                .section {
-                    margin: .8rem 0;
-                    padding: 0;
-                }
-                .section header {
-                    padding-bottom: .15rem;
-                }
-                .section .location {
-                    padding-bottom: .15rem;
-                }
-                .stack-overflow::after {
-                    content: "";
-                }
-                .fa.social {
-                    color: #828386;
-                }
-                ul {
-                    margin-top: .4em;
-                }
-                ul,
-                li {
-                    padding: 0;
-                }
-                ul.keywords li,
-                ul.courses li {
-                    margin: 0;
-                    padding: 0;
-                    font-size: .8rem;
-                    text-transform: lowercase;
-                }
-                ul.keywords li::after,
-                ul.courses li::after {
-                    padding: 0 0 0 .1rem;
-                    content: " |";
-                }
-                ul.keywords::before,
-                ul.courses::before {
-                    font-size: .8rem;
-                    font-weight: 600;
-                }
-                ul.keywords::before {
-                    content: "Skills acquired: ";
-                }
-                #skills .keywords::before {
-                    content: '';
-                }
-                .section p {
-                    margin: 0;
-                    padding: 0;
-                }
-                ul.courses::before {
-                    content: "Major courses: ";
-                }
-                ul.keywords li:last-of-type::after,
-                ul.courses li:last-of-type::after {
-                    content: "";
-                }
-                .level em {
-                    font-style: normal;
-                    padding: .1em 0;
-                }
-                .level .bar {
-                    display: none;
-                }
-                #profiles .item {
-                    padding: 0;
-                }
-                .item.display {
-                    display: block;
-                    opacity: 1 !important;
-                }
-            }
-        </style>
-    </head>
-    
-    <body>
-        <div id="resume">
-            <header id="header" class="clear">
-                <img class="picture" src="https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.jpg" alt="Satyendra Choudhary" />
-                <div class="middle">
-                    	<h1 class="name">Satyendra Choudhary</h1>
 
-                    	<h2 class="label">Fullstack JavaScript Engineer</h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Satyendra Choudhary</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
 
-                </div>	<span class="location">
-    			<span class="address">Sunrise city, Niwaru,</span> 	<span class="city">Jaipur,</span> 
-                <span
-                class="region">rajasthan</span>	<span class="countryCode">IN</span> </span>
-                    <div id="contact">
-                        <div class="website">	<span class="fa fa-external-link"></span>
-	<a target="_blank" target="_blank"
-                            href="https://satyendrachaudhary.github.io/">resume</a>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
 
-                        </div>
-                        <div class="email">	<span class="fa fa-envelope-o"></span>
-	<a href="mailto:satyendraajm@live.com">satyendraajm@live.com</a>
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
 
-                        </div>
-                        <div class="phone">	<span class="fa fa-mobile"></span>
-	<a href="tel:9782147996">9782147996</a>
+    body {
+      line-height: 1;
+    }
 
-                        </div>
-                    </div>
-                    <div id="profiles">
-                        <div class="item">
-                            <div class="username">	<span class="fa fa-github github social"></span>
-	<span class="url">
-    						<a target="_blank" href="https://satyendrachaudhary.github.io/">satyendrachaudhary</a>
-    					</span> 
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="username">	<span class="fa fa-linkedin linkedin social"></span>
-	<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/satyendrachoudhary/">satyendrachoudhary</a>
-    					</span> 
-                            </div>
-                        </div>
-                    </div>
-            </header>
-            <section class="section main-summary">
-                <section>
-                    <div>
-                        <p>I am a web developer with 8+ years of professional experience building
-                            efficient, centralized, manageable and DRY code. On a daily basis, I work
-                            on JavaScript and other related technologies. I like to explore and experiment
-                            with new technologies and frameworks. I love working on front-end frameworks
-                            and technologies. I am an eager learner. When I am not coding, I like travelling.</p>
-                    </div>
-                </section>
-            </section>
-            <section class="section margin1">
-                <header>
-                    	<h2 class='section-title'>Skills</h2>
+    ol,
+    ul {
+      list-style: none;
+    }
 
-                </header>
-                <section id="skills">
-                    <div class="item">
-                        	<h3 class="name">
-    				JavaScript
-    			</h3>
+    blockquote,
+    q {
+      quotes: none;
+    }
 
-                        <div class="level master">	<em>Master</em>
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: none;
+    }
 
-                            <div class="bar"></div>
-                        </div>
-                        <ul class="keywords">
-                            <li>React</li>
-                            <li>Express</li>
-                            <li>Nest</li>
-                            <li>Backbone</li>
-                            <li>Lodash</li>
-                            <li>jQuery</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        	<h3 class="name">
-    				PHP
-    			</h3>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
 
-                        <div class="level advanced">	<em>Advanced</em>
 
-                            <div class="bar"></div>
-                        </div>
-                        <ul class="keywords">
-                            <li>Core</li>
-                            <li>CakePHP</li>
-                            <li>Symfony</li>
-                            <li>Laravel</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        	<h3 class="name">
-    				DevOps
-    			</h3>
+    /****************
+*	COMMONS
+****************/
 
-                        <div class="level beginner">	<em>Beginner</em>
+    body,
+    html {
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 13px;
+      color: #40484f;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.46153846;
+      text-align: left;
+      -webkit-text-size-adjust: 100%;
+    }
 
-                            <div class="bar"></div>
-                        </div>
-                        <ul class="keywords">
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        	<h3 class="name">
-    				Git
-    			</h3>
+    p {
+      display: block;
+      margin-bottom: 1.3em;
+    }
 
-                        <div class="level advanced">	<em>Advanced</em>
+    a {
+      color: #0095ff;
+      text-decoration: none;
+    }
 
-                            <div class="bar"></div>
-                        </div>
-                        <ul class="keywords">
-                            <li>CLI</li>
-                            <li>Sublime Merge</li>
-                            <li>Github Desktop</li>
-                            <li>GitLens</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        	<h3 class="name">
-    				Text Editors
-    			</h3>
+    a:hover {
+      color: #0c65a5;
+      text-decoration: underline;
+    }
 
-                        <div class="level advanced">	<em>Advanced</em>
+    ul {
+      margin-top: 1rem;
+    }
 
-                            <div class="bar"></div>
-                        </div>
-                        <ul class="keywords">
-                            <li>VS Code</li>
-                            <li>Sublime Text 3</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        	<h3 class="name">
-    				Other Tools
-    			</h3>
+    li {
+      list-style-type: square;
+      list-style-position: outside;
+      margin-left: 1.3em;
+    }
 
-                        <div class="level intermediate">	<em>Intermediate</em>
+    .highlights>li>p {
+      margin-bottom: 0.5em;
+    }
 
-                            <div class="bar"></div>
-                        </div>
-                        <ul class="keywords">
-                            <li>pgAdmin</li>
-                            <li>SqlYog</li>
-                            <li>PuTTY</li>
-                            <li>Pageant</li>
-                            <li>WinSCP</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-            <section class="section">
-                <header>
-                     <h2 class='section-title'>Work Experience <span class="item-count">(4)</span></h2>
+    h1 {
+      font-size: 2rem;
+    }
 
-                </header>
-                <section id="work">
-                    <section class="work-item">
-                        <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked"
-                        />
-                        <label for="work-item-0"></label>
-                        <header>
-                            <div class="position">Senior Software Engineer</div>
-                            <div class="company">FiftyFive Technologies</div>
-                            <div class="date"> <span class="startDate">March 2020</span> 	<span class="endDate">- Current</span>
+    h2 {
+      font-size: 1.67rem;
+    }
 
-                            </div>
-                        </header>	<span class="website">
-        		<a target="_blank" href="https://www.linkedin.com/company/40663997">https://www.linkedin.com/company/40663997</a>
-        	</span> 
-                        <div class="item" id="work-item">
-                            <div class="summary">
-                                <p>
-                                    <p>Primarily working on all kinds of JS based technologies and frameworks.</p>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="work-item">
-                        <input id="work-item-1" type="checkbox" class="toggle-item" />
-                        <label for="work-item-1"></label>
-                        <header>
-                            <div class="position">Senior Software Engineer</div>
-                            <div class="company">Pratham Software (PSI)</div>
-                            <div class="date"> <span class="startDate">May 2017</span> 	<span class="endDate">- February 2020</span> 
-                            </div>
-                        </header>	<span class="website">
-        		<a target="_blank" href="https://www.linkedin.com/company/208203">https://www.linkedin.com/company/208203</a>
-        	</span> 
-                        <div class="item" id="work-item">
-                            <div class="summary">
-                                <p>
-                                    <p>Worked as JS(Backbone, Node/Express) developer</p>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="work-item">
-                        <input id="work-item-2" type="checkbox" class="toggle-item" />
-                        <label for="work-item-2"></label>
-                        <header>
-                            <div class="position">PHP Developer</div>
-                            <div class="company">Systweak Software</div>
-                            <div class="date"> <span class="startDate">April 2015</span> 	<span class="endDate">- May 2017</span> 
-                            </div>
-                        </header>	<span class="website">
-        		<a target="_blank" href="https://www.linkedin.com/company/3739341">https://www.linkedin.com/company/3739341</a>
-        	</span> 
-                        <div class="item" id="work-item">
-                            <div class="summary">
-                                <p>
-                                    <p>Worked as CakePHP developer</p>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="work-item">
-                        <input id="work-item-3" type="checkbox" class="toggle-item" />
-                        <label for="work-item-3"></label>
-                        <header>
-                            <div class="position">CakePHP Developer</div>
-                            <div class="company">WeDig Tech solutions Private Limited</div>
-                            <div class="date"> <span class="startDate">March 2014</span> 	<span class="endDate">- March 2015</span> 
-                            </div>
-                        </header>	<span class="website">
-        		<a target="_blank" href="https://www.linkedin.com/company/1498793">https://www.linkedin.com/company/1498793</a>
-        	</span> 
-                        <div class="item" id="work-item">
-                            <div class="summary">
-                                <p>
-                                    <p>Worked as CakePHP &amp; Sencha developer</p>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <section class="section">
-                <header>
-                     <h2 class='section-title'>Projects <span class="item-count">(11)</span></h2>
+    h3 {
+      font-size: 1.27rem;
+    }
 
-                </header>
-                <section id="projects">
-                    <section class="project-item">
-                        <header>
-                            <div class="position">Gelato</div>
-                            <div class="date"> <span class="startDate">May 2021</span>
- <span class="endDate">- Current</span>
+    em {
+      color: #757575;
+    }
 
-                            </div>
-                        </header> <span class="website">
+    blockquote {
+      margin-bottom: 1em;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+
+    /* main container */
+
+    #resume {
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+
+    /* every section wrapper */
+
+    .section {
+      margin-bottom: 1rem;
+    }
+
+    section .location {
+      margin-right: .5em;
+      color: #606d76;
+      font-weight: 700;
+    }
+
+    #contact {
+      margin-top: .5rem;
+    }
+
+    #profiles .item {
+      padding: 0;
+    }
+
+    #header>#profiles,
+    #header>#contact,
+    #skills,
+    #languages,
+    #interests {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+    }
+
+    #header>div {
+      line-height: 1.5;
+    }
+
+    #header>div>div {
+      margin-right: 1.2em;
+    }
+
+    #header h1.name {
+      font-size: 2.8rem;
+      font-weight: 100;
+      line-height: 100%;
+    }
+
+    #header h2.label {
+      color: #202931;
+      font-size: 1.47rem;
+      font-weight: 300;
+    }
+
+    #header .picture {
+      width: 11em;
+      float: right;
+      border-radius: 4px;
+    }
+
+    .main-summary {
+      background: #f1f8ff;
+      padding: 1.2em 1em;
+      margin-top: 1rem;
+    }
+
+    .main-summary p {
+      margin: .15em 0 0;
+    }
+
+    h2.section-title {
+      display: inline-block;
+      background: #fff;
+      padding: 0 1em 0.3em 0;
+      color: #ff6d1f;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: none;
+      font-size: .9rem;
+    }
+
+    .section>header {
+      position: relative;
+    }
+
+    .fa {
+      margin-right: 0.25em;
+    }
+
+    .section>header::after {
+      position: absolute;
+      left: 0;
+      top: .7em;
+      height: 1px;
+      background: #ccc;
+      content: "";
+      width: 100%;
+      z-index: -100;
+      display: block;
+    }
+
+    .section.main-summary>section {
+      margin: 0;
+    }
+
+    .section>section>header {
+      font-size: 1.38rem;
+      position: relative;
+      margin-top: .7em;
+    }
+
+    .section>section>header:first-of-type {
+      margin: 0;
+    }
+
+    .section>section>header .space-left {
+      position: absolute;
+      left: -1.56rem;
+      top: 5px;
+      color: #aaa;
+      line-height: 1;
+      opacity: 0;
+    }
+
+    .position,
+    .company,
+    .organization,
+    .institution,
+    .date,
+    .area,
+    .studyType,
+    .title,
+    .awarder {
+      display: inline;
+    }
+
+    .position,
+    .studyType,
+    .area,
+    .title,
+    .language,
+    .name {
+      font-weight: 600;
+    }
+
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+      content: "at "
+    }
+
+    .company,
+    .institution,
+    .organization,
+    .awarder {
+      color: #606d76;
+      font-weight: 400;
+    }
+
+    .section header .date {
+      font-size: 1rem;
+      display: inline-table;
+      padding: .1em 0;
+      font-weight: 600;
+    }
+
+    ul.keywords,
+    ul.courses {
+      margin-top: .5em;
+    }
+
+    ul.keywords li,
+    ul.courses li {
+      display: inline-block;
+      margin: 2px 2px 2px 0;
+      padding: 4px 5px 5px;
+      font-size: .9rem;
+      line-height: 1;
+      text-transform: lowercase;
+      color: #3e6d8e;
+      background-color: #dfeaf1;
+      border: 0 solid #dfeaf1;
+      white-space: nowrap;
+    }
+
+    ul.keywords li:hover,
+    ul.courses li:hover {
+      background: #dfeaf0;
+    }
+
+    .item {
+      padding: .5em 0;
+    }
+
+    .gpa {
+      padding-bottom: .5em;
+    }
+
+    .fa.social {
+      font-size: 1.1em;
+    }
+
+
+    /* Social Media Brand Colors */
+
+    .google-plus {
+      color: #dd4b39;
+    }
+
+    .tumblr {
+      color: #32506d;
+    }
+
+    .foursquare {
+      color: #0072b1;
+    }
+
+    .facebook {
+      color: #3b5998;
+    }
+
+    .linkedin {
+      color: #007bb6;
+    }
+
+    .pinterest {
+      color: #cb2027;
+    }
+
+    .dribbble {
+      color: #ea4c89;
+    }
+
+    .instagram {
+      color: #517fa4;
+    }
+
+    .twitter {
+      color: #00aced;
+    }
+
+    .soundcloud {
+      color: #ff3a00;
+    }
+
+    .wordpress {
+      color: #21759b;
+    }
+
+    .youtube {
+      color: #bb0000;
+    }
+
+    .github {
+      color: #171515;
+    }
+
+    .stack-overflow {
+      color: #828386;
+      position: relative;
+    }
+
+    .flickr {
+      color: #ff0084;
+    }
+
+    .stack-overflow::after {
+      position: absolute;
+      left: 0;
+      content: '\f16c';
+      color: #f68a1f;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .telegram {
+      color: #2291c3;
+    }
+
+    #languages .item,
+    #skills .item,
+    #interests .item {
+      width: 15em;
+      padding: 0 .5em .5em 0;
+      border-bottom: none;
+    }
+
+    #skills .item {
+      width: 16em;
+    }
+
+    #skills .item .keywords {
+      width: 15em;
+    }
+
+
+    /* Skill chart */
+
+    .level {
+      margin-bottom: .5em;
+    }
+
+    .level .bar {
+      border: 1px solid #ddd;
+      display: block;
+      width: 10em;
+      height: 5px;
+      position: relative;
+    }
+
+    .level .bar::after {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      background: black;
+      height: 5px;
+    }
+
+    .level.beginner .bar::after {
+      background: #EB5F51;
+      width: 2.5em;
+    }
+
+    .level.intermediate .bar::after {
+      background: #ffdf1f;
+      width: 5em;
+    }
+
+    .level.advanced .bar::after,
+    .level.fluent .bar::after {
+      background: #5CB85C;
+      width: 7.5em;
+    }
+
+    .level.master .bar::after,
+    .level.native.speaker .bar::after {
+      background: #59C596;
+      width: 10em;
+    }
+
+    #references .item {
+      padding-left: .5em;
+      border-left: 5px solid #ff6d1f;
+    }
+
+    .toggle-item {
+      visibility: hidden;
+    }
+
+    /******************
+*	HELPER CLASSES
+******************/
+
+    .clear::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .display {
+      display: block;
+      opacity: 1 !important;
+    }
+
+    .margin1 {
+      margin-bottom: .5rem;
+    }
+
+
+    /****************
+*		TABLET
+****************/
+
+    @media screen and (min-width: 602px) {
+      #resume {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+
+    /****************
+*		LAPTOP
+****************/
+
+    @media screen and (min-width: 1025px) {
+      li {
+        margin-left: 1.5em;
+      }
+
+      #resume {
+        width: 820px;
+        margin: 2rem auto;
+      }
+
+      .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .section>section {
+        margin-left: 1.67rem;
+      }
+
+      .toggle-item {
+        transform: translate(-9999px);
+      }
+
+      .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+      }
+
+      .toggle-item:checked+label:after {
+        content: '\f0d7';
+      }
+
+      .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+      }
+
+      .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+      }
+
+      .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+      }
+
+      .company::before,
+      .institution::before,
+      .organization::before,
+      .awarder::before {
+        content: "| ";
+      }
+
+      .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+      }
+
+      .section header .date {
+        float: right;
+        padding: .2em;
+      }
+
+      .display {
+        display: none;
+      }
+
+      .display:not(.none) {
+        display: block;
+      }
+    }
+
+    @media print {
+      #resume {
+        margin: 0;
+        padding: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.3;
+        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+      }
+
+      @page {
+        margin: 1cm 1.4cm;
+      }
+
+      .item-count {
+        display: none;
+      }
+
+      .company::before,
+      .institution::before,
+      .organization::before,
+      .awarder::before {
+        content: "at ";
+      }
+
+      .main-summary {
+        padding: 2rem 0;
+      }
+
+      .section {
+        margin: .8rem 0;
+        padding: 0;
+      }
+
+      .section header {
+        padding-bottom: .15rem;
+      }
+
+      .section .location {
+        padding-bottom: .15rem;
+      }
+
+      .stack-overflow::after {
+        content: "";
+      }
+
+      .fa.social {
+        color: #828386;
+      }
+
+      ul {
+        margin-top: .4em;
+      }
+
+      ul,
+      li {
+        padding: 0;
+      }
+
+      ul.keywords li,
+      ul.courses li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+      }
+
+      ul.keywords li::after,
+      ul.courses li::after {
+        padding: 0 0 0 .1rem;
+        content: " |";
+      }
+
+      ul.keywords::before,
+      ul.courses::before {
+        font-size: .8rem;
+        font-weight: 600;
+      }
+
+      ul.keywords::before {
+        content: "Skills acquired: ";
+      }
+
+      #skills .keywords::before {
+        content: '';
+      }
+
+      .section p {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.courses::before {
+        content: "Major courses: ";
+      }
+
+      ul.keywords li:last-of-type::after,
+      ul.courses li:last-of-type::after {
+        content: "";
+      }
+
+      .level em {
+        font-style: normal;
+        padding: .1em 0;
+      }
+
+      .level .bar {
+        display: none;
+      }
+
+      #profiles .item {
+        padding: 0;
+      }
+
+      .item.display {
+        display: block;
+        opacity: 1 !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="resume">
+    <header id="header" class="clear">
+      <img class="picture"
+        src="https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.jpg"
+        alt="Satyendra Choudhary" />
+      <div class="middle">
+        <h1 class="name">Satyendra Singh</h1>
+        <h2 class="label">Fullstack JavaScript Engineer</h2>
+      </div>
+
+      <span class="location">
+        <span class="city">Jaipur,</span>
+        <span class="region">rajasthan</span>
+        <span class="countryCode">IN</span>
+      </span>
+
+
+      <div id="contact">
+        <div class="website">
+          <span class="fa fa-external-link"></span>
+          <a target="_blank" target="_blank" href="https://satyendrachaudhary.github.io/">Resume</a>
+        </div>
+        <div class="email">
+          <span class="fa fa-envelope-o"></span>
+          <a href="mailto:satyendraajm@live.com">satyendraajm@live.com</a>
+        </div>
+        <div class="phone">
+          <span class="fa fa-mobile"></span>
+          <a href="tel:9782147996">9782147996</a>
+        </div>
+      </div>
+
+      <div id="profiles">
+        <div class="item">
+          <div class="username">
+            <span class="fa fa-github github social"></span>
+            <span class="url">
+              <a target="_blank" href="https://satyendrachaudhary.github.io/">satyendrachaudhary</a>
+            </span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="username">
+            <span class="fa fa-linkedin linkedin social"></span>
+            <span class="url">
+              <a target="_blank" href="https://www.linkedin.com/in/satyendrachoudhary/">satyendrachoudhary</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section main-summary">
+      <section>
+        <div>
+          <p>I am a JavaScript enthusiast building and improving web world from last 8 years. Primarily I like to work
+            with React, Express, Nest. Always open to learn something new. When I am not coding, I love to wander in
+            wilderness.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title'>Skills</h2>
+      </header>
+      <section id="skills">
+        <div class="item">
+          <h3 class="name">
+            JavaScript
+          </h3>
+
+          <div class="level master">
+            <em>Master</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>React</li>
+            <li>Express</li>
+            <li>Nest</li>
+            <li>Backbone</li>
+            <li>Angular</li>
+            <li>Knockout</li>
+            <li>Lodash</li>
+            <li>jQuery</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            PHP
+          </h3>
+
+          <div class="level advanced">
+            <em>Advanced</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>Core</li>
+            <li>CakePHP</li>
+            <li>Symfony</li>
+            <li>Laravel</li>
+            <li>CodeIgnitor</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            DevOps
+          </h3>
+
+          <div class="level beginner">
+            <em>Beginner</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Git
+          </h3>
+
+          <div class="level advanced">
+            <em>Advanced</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>CLI</li>
+            <li>Sublime Merge</li>
+            <li>Github Desktop</li>
+            <li>GitLens</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Text Editors
+          </h3>
+
+          <div class="level advanced">
+            <em>Advanced</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>VS Code</li>
+            <li>Sublime Text 3</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Database
+          </h3>
+
+          <div class="level advanced">
+            <em>Advanced</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>MySQL</li>
+            <li>PgSQL</li>
+            <li>Firebase</li>
+            <li>Mongo</li>
+            <li>SQLLite3</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Other Tools
+          </h3>
+
+          <div class="level intermediate">
+            <em>Intermediate</em>
+            <div class="bar"></div>
+          </div>
+          <ul class="keywords">
+            <li>pgAdmin</li>
+            <li>SqlYog</li>
+            <li>PuTTY</li>
+            <li>Pageant</li>
+            <li>WinSCP</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(4)</span></h2>
+      </header>
+
+      <section id="work">
+        <section class="work-item">
+
+          <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
+          <label for="work-item-0"></label>
+
+          <header>
+            <div class="position">Senior Software Engineer</div>
+            <div class="company">FiftyFive Technologies</div>
+            <div class="date">
+              <span class="startDate">March 2020</span>
+              <span class="endDate">- October 2021</span>
+            </div>
+          </header>
+
+          <span class="website">
+            <a target="_blank"
+              href="https://www.linkedin.com/company/40663997">https://www.linkedin.com/company/40663997</a>
+          </span>
+          <div class="item" id="work-item">
+            <div class="summary">
+              <p>
+              <p>Primarily working on all kinds of JS based technologies and frameworks.</p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="work-item">
+
+          <input id="work-item-1" type="checkbox" class="toggle-item" />
+          <label for="work-item-1"></label>
+
+          <header>
+            <div class="position">Senior Software Engineer</div>
+            <div class="company">Pratham Software (PSI)</div>
+            <div class="date">
+              <span class="startDate">May 2017</span>
+              <span class="endDate">- February 2020</span>
+            </div>
+          </header>
+
+          <span class="website">
+            <a target="_blank"
+              href="https://www.linkedin.com/company/208203">https://www.linkedin.com/company/208203</a>
+          </span>
+          <div class="item" id="work-item">
+            <div class="summary">
+              <p>
+              <p>Worked as JS(Backbone, Node/Express) developer</p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="work-item">
+
+          <input id="work-item-2" type="checkbox" class="toggle-item" />
+          <label for="work-item-2"></label>
+
+          <header>
+            <div class="position">PHP Developer</div>
+            <div class="company">Systweak Software</div>
+            <div class="date">
+              <span class="startDate">April 2015</span>
+              <span class="endDate">- May 2017</span>
+            </div>
+          </header>
+
+          <span class="website">
+            <a target="_blank"
+              href="https://www.linkedin.com/company/3739341">https://www.linkedin.com/company/3739341</a>
+          </span>
+          <div class="item" id="work-item">
+            <div class="summary">
+              <p>
+              <p>Worked as CakePHP developer</p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="work-item">
+
+          <input id="work-item-3" type="checkbox" class="toggle-item" />
+          <label for="work-item-3"></label>
+
+          <header>
+            <div class="position">CakePHP Developer</div>
+            <div class="company">WeDig Tech solutions Private Limited</div>
+            <div class="date">
+              <span class="startDate">March 2014</span>
+              <span class="endDate">- March 2015</span>
+            </div>
+          </header>
+
+          <span class="website">
+            <a target="_blank"
+              href="https://www.linkedin.com/company/1498793">https://www.linkedin.com/company/1498793</a>
+          </span>
+          <div class="item" id="work-item">
+            <div class="summary">
+              <p>
+              <p>Worked as CakePHP &amp; Sencha developer</p>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(11)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+
+          <header>
+            <div class="position">Gelato</div>
+            <div class="date">
+              <span class="startDate">May 2021</span>
+              <span class="endDate">- Current</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.gelato.com/">https://www.gelato.com/</a>
           </span>
+          <ul class="keywords">
+            <li>Symfony 3</li>
+            <li>Docker</li>
+            <li>Postgres</li>
+            <li>Terraform</li>
+            <li>Circle CI</li>
+            <li>Sentry</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Moved stock management from external platform(Sanity) to internal application module.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>Symfony 3</li>
-                            <li>Docker</li>
-                            <li>Postgres</li>
-                            <li>Circle CI</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Moved stock management from external platform to internal application
-                                        module.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">Qopla</div>
-                            <div class="date"> <span class="startDate">March 2021</span>
- <span class="endDate">- April 2021</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">Qopla</div>
+            <div class="date">
+              <span class="startDate">March 2021</span>
+              <span class="endDate">- April 2021</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.qopla.com/">https://www.qopla.com/</a>
           </span>
+          <ul class="keywords">
+            <li>Nest JS</li>
+            <li>MongoDB</li>
+            <li>Delivery Hero</li>
+            <li>React</li>
+            <li>Java</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Integrated Delivery Hero platform with Qopla for accepting orders.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>React</li>
-                            <li>Nest JS</li>
-                            <li>MongoDB</li>
-                            <li>Java</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Integrated Delivery Hero platform with Qopla for accepting orders.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">Nord FondKommission</div>
-                            <div class="date"> <span class="startDate">July 2020</span>
- <span class="endDate">- December 2020</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">Nord FondKommission</div>
+            <div class="date">
+              <span class="startDate">July 2020</span>
+              <span class="endDate">- December 2020</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://nordfk.se/sv/">https://nordfk.se/sv/</a>
           </span>
+          <ul class="keywords">
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Slim PHP</li>
+            <li>Assently</li>
+            <li>BrickNode</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Worked on mission critical features like contract document creation automation module based on user
+                  inputs.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>React</li>
-                            <li>Bootstrap</li>
-                            <li>Slim PHP</li>
-                            <li>Assently</li>
-                            <li>BrickNode</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Worked on critical document creation module based on user inputs.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">Admin Portal</div>
-                            <div class="date"> <span class="startDate">March 2020</span>
- <span class="endDate">- April 2021</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">Admin Portal</div>
+            <div class="date">
+              <span class="startDate">March 2020</span>
+              <span class="endDate">- April 2021</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://admin.myuplink.com">https://admin.myuplink.com</a>
           </span>
+          <ul class="keywords">
+            <li>React JS</li>
+            <li>Material UI</li>
+            <li>MS Service Fabric</li>
+            <li>Azure cloud services</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Bootstrapped project single-handedly</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>Material UI</li>
-                            <li>React JS</li>
-                            <li>MS Service Fabric</li>
-                            <li>Azure cloud services</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Started project</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">MyUplink &amp; MyUplink Pro</div>
-                            <div class="date"> <span class="startDate">June 2020</span>
- <span class="endDate">- April 2021</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">MyUplink &amp; MyUplink Pro</div>
+            <div class="date">
+              <span class="startDate">June 2020</span>
+              <span class="endDate">- April 2021</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://pro.myuplink.com">https://pro.myuplink.com</a>
           </span>
+          <ul class="keywords">
+            <li>React JS</li>
+            <li>Bootstrap</li>
+            <li>MS Service Fabric</li>
+            <li>Azure cloud services</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Delivered critical features grouping, scheduling and system diagram.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>React JS</li>
-                            <li>Bootstrap</li>
-                            <li>MS Service Fabric</li>
-                            <li>Azure cloud services</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Delivered critical modules grouping, scheduling and system diagram.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">Hinstant</div>
-                            <div class="date"> <span class="startDate">November 2019</span>
- <span class="endDate">- February 2020</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">Hinstant</div>
+            <div class="date">
+              <span class="startDate">November 2019</span>
+              <span class="endDate">- February 2020</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.hinstant.com/">https://www.hinstant.com/</a>
           </span>
+          <ul class="keywords">
+            <li>CI with Pyro CMS</li>
+            <li>Express JS</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Jenkins</li>
+            <li>AI-ML</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Moved promotion emails from manual to an automated AI/ML scores based process.</p>
+              </li>
+              <li>
+                <p>Updated Parser to support booking receipt from Booking, Expedia and similar platforms.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>CI with Pyro CMS</li>
-                            <li>Express JS</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Jenkins</li>
-                            <li>AI-ML</li>
-                            <li>AWS Sagemaker</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Moved promotion emails from manual to an automated AI/ML scores based
-                                        process.</p>
-                                </li>
-                                <li>
-                                    <p>Updated Parser to support booking receipt from Booking, Expedia and similar
-                                        platforms.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">BeIntent</div>
-                            <div class="date"> <span class="startDate">December 2017</span>
- <span class="endDate">- October 2019</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">BeIntent</div>
+            <div class="date">
+              <span class="startDate">December 2017</span>
+              <span class="endDate">- October 2019</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.beintent.com/">https://www.beintent.com/</a>
           </span>
+          <ul class="keywords">
+            <li>Backbone JS</li>
+            <li>Bootstrap</li>
+            <li>Symfony 1 &amp; 2</li>
+            <li>Symfony 4</li>
+            <li>Grunt</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Worked on gamification of application</p>
+              </li>
+              <li>
+                <p>Added SVG based Avatar maker.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>Symfony 1 &amp; 2</li>
-                            <li>Symfony 4</li>
-                            <li>Backbone JS</li>
-                            <li>Bootstrap</li>
-                            <li>Grunt</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Worked on gamification of application</p>
-                                </li>
-                                <li>
-                                    <p>Added SVG based Avatar maker.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">RAK Wireless</div>
-                            <div class="date"> <span class="startDate">January 2018</span>
- <span class="endDate">- February 2020</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">RAK Wireless</div>
+            <div class="date">
+              <span class="startDate">January 2018</span>
+              <span class="endDate">- February 2020</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.rakwireless.com/">https://www.rakwireless.com/</a>
           </span>
+          <ul class="keywords">
+            <li>Express JS</li>
+            <li>Bootstrap</li>
+            <li>AWS S3</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Created documentation and download centre based on AWS S3 file architecture.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>Express JS</li>
-                            <li>AWS S3</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Created documentation/download centre based on S3 file architecture.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">Vault IQ</div>
-                            <div class="date"> <span class="startDate">May 2017</span>
- <span class="endDate">- December 2017</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">Vault IQ</div>
+            <div class="date">
+              <span class="startDate">May 2017</span>
+              <span class="endDate">- December 2017</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.vaultintel.com/">https://www.vaultintel.com/</a>
           </span>
+          <ul class="keywords">
+            <li>Zend framework</li>
+            <li>MSSQL</li>
+            <li>jQuery</li>
+          </ul>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>Zend framework</li>
-                            <li>MSSQL</li>
-                            <li>jQuery</li>
-                        </ul>
-                        <div class="item"></div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">OnePlace</div>
-                            <div class="date"> <span class="startDate">November 2015</span>
- <span class="endDate">- May 2017</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">OnePlace</div>
+            <div class="date">
+              <span class="startDate">November 2015</span>
+              <span class="endDate">- May 2017</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="-">-</a>
           </span>
+          <ul class="keywords">
+            <li>PHP</li>
+            <li>Bootstrap</li>
+            <li>MySql</li>
+            <li>MS Access</li>
+            <li>ZiCom(3rdParty Access Card System)</li>
+            <li>jQuery</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Employee Onboarding(from vendor referral to training)</p>
+              </li>
+              <li>
+                <p>Physical RFID card based attendance capture</p>
+              </li>
+              <li>
+                <p>Employee shift management in 24x7 environment with 3 shifts everyday</p>
+              </li>
+              <li>
+                <p>Leave management with 2 level of escalations where everything is configurable</p>
+              </li>
+              <li>
+                <p>Salary slip management(Import, encrypt, organize for future access where only employees can se their
+                  salary slips). </p>
+              </li>
+              <li>
+                <p>Employee document management with encryption</p>
+              </li>
+              <li>
+                <p>Transport management(in association with Move In Sync)</p>
+              </li>
+              <li>
+                <p>Training module</p>
+              </li>
+              <li>
+                <p>ACL based user authorization</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
 
-                        <ul class="keywords">
-                            <li>PHP</li>
-                            <li>Bootstrap</li>
-                            <li>MySql</li>
-                            <li>MS Access</li>
-                            <li>ZiCom(3rdParty Access Card System)</li>
-                            <li>jQuery</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Employee Onboarding</p>
-                                </li>
-                                <li>
-                                    <p>Employee Documents management</p>
-                                </li>
-                                <li>
-                                    <p>Attendance/Leave management with 24x7 shifts</p>
-                                </li>
-                                <li>
-                                    <p>Employee Transportation management</p>
-                                </li>
-                                <li>
-                                    <p>Salary slips management with privacy &amp; encryption</p>
-                                </li>
-                                <li>
-                                    <p>ACL based user authorization</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <header>
-                            <div class="position">UMMS Portal</div>
-                            <div class="date"> <span class="startDate">February 2015</span>
- <span class="endDate">- March 2015</span>
-
-                            </div>
-                        </header> <span class="website">
+          <header>
+            <div class="position">UMMS Portal</div>
+            <div class="date">
+              <span class="startDate">February 2015</span>
+              <span class="endDate">- March 2015</span>
+            </div>
+          </header>
+          <span class="website">
             <a target="_blank" href="https://www.intuitships-umms.com">https://www.intuitships-umms.com</a>
           </span>
+          <ul class="keywords">
+            <li>CakePHP</li>
+            <li>TCPDF</li>
+            <li>PHPExcel</li>
+            <li>PHPMailer</li>
+            <li>MySql</li>
+            <li>jQuery</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+              <li>
+                <p>Stock procurements</p>
+              </li>
+              <li>
+                <p>Vendor/Supplier management</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
+      </header>
 
-                        <ul class="keywords">
-                            <li>CakePHP</li>
-                            <li>TCPDF</li>
-                            <li>PHPExcel</li>
-                            <li>PHPMailer</li>
-                            <li>MySql</li>
-                            <li>jQuery</li>
-                        </ul>
-                        <div class="item">
-                            <ul class="highlights">
-                                <li>
-                                    <p>Stock procurements</p>
-                                </li>
-                                <li>
-                                    <p>Vendor/Supplier management</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <section class="section">
-                <header>
-                     <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
+      <section id="education">
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Master of Computer Application
+              </div>
+              <div class="area">
 
-                </header>
-                <section id="education">
-                    <section class="education-item">
-                        <header>
-                            <div class="header-left">
-                                <div class="studyType">Master of Computer Application</div>
-                                <div class="area"></div>
-                                <div class="institution">Suresh Gyan Vihar University</div>
-                            </div>
-                            <div class="date"> <span class="startDate">
-              2010
+              </div>
+              <div class="institution">
+                Suresh Gyan Vihar University
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+                2010
               </span>
- <span class="endDate">
-              - 2013
+              <span class="endDate">
+                - 2013
               </span>
+            </div>
+          </header>
 
-                            </div>
-                        </header>
-                        <div class="item">
-                            <div class='gpa'> <strong> Grade:</strong>  <span>7.45</span>
 
-                            </div>
-                        </div>
-                    </section>
-                    <section class="education-item">
-                        <header>
-                            <div class="header-left">
-                                <div class="studyType">Bachelor of Computer Application</div>
-                                <div class="area"></div>
-                                <div class="institution">Management And Commerce Institute Of Global Synergy</div>
-                            </div>
-                            <div class="date"> <span class="startDate">
-              2007
+
+          <div class="item">
+            <div class='gpa'>
+              <strong> Grade:</strong> <span>7.45</span>
+            </div>
+          </div>
+        </section>
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor of Computer Application
+              </div>
+              <div class="area">
+
+              </div>
+              <div class="institution">
+                Management And Commerce Institute Of Global Synergy
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+                2007
               </span>
- <span class="endDate">
-              - 2010
+              <span class="endDate">
+                - 2010
               </span>
+            </div>
+          </header>
 
-                            </div>
-                        </header>
-                        <div class="item">
-                            <div class='gpa'> <strong> Grade:</strong>  <span>70%</span>
 
-                            </div>
-                        </div>
-                    </section>
-                    <section class="education-item">
-                        <header>
-                            <div class="header-left">
-                                <div class="studyType"></div>
-                                <div class="area">Elementary Education</div>
-                                <div class="institution">Demonstration Multipurpose School</div>
-                            </div>
-                            <div class="date"> <span class="startDate">
-              2000
+
+          <div class="item">
+            <div class='gpa'>
+              <strong> Grade:</strong> <span>70%</span>
+            </div>
+          </div>
+        </section>
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+
+              </div>
+              <div class="area">
+                Elementary Education
+              </div>
+              <div class="institution">
+                Demonstration Multipurpose School
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+                2000
               </span>
- <span class="endDate">
-              - 2007
+              <span class="endDate">
+                - 2007
               </span>
+            </div>
+          </header>
 
-                            </div>
-                        </header>
-                        <div class="item">
-                            <div class='gpa'> <strong> Grade:</strong>  <span></span>
 
-                            </div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <section class="section margin1">
-                <header>
-                     <h2 class='section-title'>Languages</h2>
 
-                </header>
-                <section id="languages">
-                    <div class="display">
-                         <h3 class="language">
+          <div class="item">
+            <div class='gpa'>
+              <strong> Grade:</strong> <span></span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
             English
           </h3>
-
-                        <div class="item">
-                            <div class="level fluency fluent"> <em>Fluent</em>
-
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="display">
-                         <h3 class="language">
+          <div class="item">
+            <div class="level fluency fluent">
+              <em>Fluent</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
             Hindi
           </h3>
-
-                        <div class="item">
-                            <div class="level fluency master"> <em>Master</em>
-
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section class="section margin1">
-                <header>
-                     <h2 class='section-title' class='section-title'>Interests</h2>
-
-                </header>
-                <section id="interests">
-                    <div class="item">
-                         <h3 class="name">
+          <div class="item">
+            <div class="level fluency master">
+              <em>Master</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title' class='section-title'>Interests</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
             Travelling
           </h3>
-
-                        <ul class="keywords">
-                            <li>Long drives</li>
-                            <li>Mountains</li>
-                            <li>Forests</li>
-                            <li>Rivers</li>
-                            <li>Ancient Temples &amp; Forts</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                         <h3 class="name">
+          <ul class="keywords">
+            <li>Long drives</li>
+            <li>Mountains</li>
+            <li>Forests</li>
+            <li>Rivers</li>
+            <li>Ancient Temples &amp; Forts</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
             Podcasts
           </h3>
-
-                        <ul class="keywords">
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Software Development</li>
-                            <li>Non-Tech</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                         <h3 class="name">
+          <ul class="keywords">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Software Development</li>
+            <li>Non-Tech</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
             Reading
           </h3>
-
-                        <ul class="keywords">
-                            <li>Blogs</li>
-                            <li>Tech News</li>
-                            <li>Fictions</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                         <h3 class="name">
+          <ul class="keywords">
+            <li>Blogs</li>
+            <li>Tech News</li>
+            <li>Fictions</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
             Movies
           </h3>
+          <ul class="keywords">
+            <li>Animation</li>
+            <li>Hollywood</li>
+            <li>Bollywood</li>
+          </ul>
+        </div>
+      </section>
+    </section>
 
-                        <ul class="keywords">
-                            <li>Hollywood</li>
-                            <li>Bollywood</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-    </body>
+</body>
 
 </html>
