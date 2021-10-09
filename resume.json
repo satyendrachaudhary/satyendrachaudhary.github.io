@@ -1,27 +1,27 @@
 {
+  "meta": {
+    "theme": "elegant"
+  },
   "basics": {
     "name": "Satyendra Singh",
-    "label": "Senior Software Engineer",
+    "label": "Fullstack JavaScript Engineer",
     "image": "https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.jpg",
+    "picture": "https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.jpg",
+    "email": "satyendraajm@live.com",
     "phone": "9782147996",
-    "website": "https://gitconnected.com/satyendrachaudhary/resume",
-    "summary": "I am a web developer with 8+years of professional experience building efficient, centralised, manageable and DRY code. On a daily basis, I work on JavaScript and other related technologies. I like to explore and experiment with new technologies and frameworks. I love working on front-end frameworks and technologies. I am an eager learner. When I am not coding, I like travelling.",
+    "website": "https://satyendrachaudhary.github.io/",
+    "summary": "I am a JavaScript enthusiast building and improving web world from last 8 years. Primarily I like to work with React, Express, Nest. Always open to learn something new. When I am not coding, I love to wander in wilderness.",
     "location": {
       "countryCode": "IN",
-      "address": "Sunrise city, Niwaru",
+      "address": "",
       "city": "Jaipur",
       "region": "rajasthan"
     },
     "profiles": [
       {
-        "network": "gitconnected",
-        "username": "satyendrachaudhary",
-        "url": "https://gitconnected.com/satyendrachaudhary"
-      },
-      {
         "network": "GitHub",
         "username": "satyendrachaudhary",
-        "url": "https://github.com/satyendrachaudhary"
+        "url": "https://satyendrachaudhary.github.io/"
       },
       {
         "network": "LinkedIn",
@@ -38,6 +38,7 @@
       "position": "Senior Software Engineer",
       "website": "https://www.linkedin.com/company/40663997",
       "startDate": "2020-03-31",
+      "endDate": "2021-10-08",
       "summary": "Primarily working on all kinds of JS based technologies and frameworks.",
       "highlights": []
     },
@@ -56,16 +57,16 @@
       "website": "https://www.linkedin.com/company/3739341",
       "startDate": "2015-04-30",
       "endDate": "2017-05-31",
-      "summary": "Worked as Cakephp developer",
+      "summary": "Worked as CakePHP developer",
       "highlights": []
     },
     {
-      "company": "WeDig Techsolutions Private Limited",
-      "position": "Cakephp Developer",
+      "company": "WeDig Tech solutions Private Limited",
+      "position": "CakePHP Developer",
       "website": "https://www.linkedin.com/company/1498793",
       "startDate": "2014-03-31",
       "endDate": "2015-03-31",
-      "summary": "Worked as Cakephp & Sencha developer",
+      "summary": "Worked as CakePHP & Sencha developer",
       "highlights": []
     }
   ],
@@ -94,9 +95,9 @@
       "gpa": "7.45"
     },
     {
-      "institution": "Management And Commerce Intstitute Of Global Synergy",
+      "institution": "Management And Commerce Institute Of Global Synergy",
       "url": "",
-      "area": "Computer Applications",
+      "area": "Computer Science",
       "studyType": "Bachelor of Computer Application",
       "startDate": "2007-08-01",
       "endDate": "2010-05-01",
@@ -118,11 +119,11 @@
     {
       "institution": "Demonstration Multipurpose School",
       "url": "https://www.rieajmer.raj.nic.in/Home/HomePage.aspx",
-      "area": "Elementry Education",
+      "area": "Elementary Education",
       "studyType": "",
       "startDate": "2000-07-01",
       "endDate": "2007-05-01",
-      "score": "",
+      "score": "65%",
       "courses": [],
       "description": "",
       "activities": "",
@@ -149,6 +150,8 @@
         "Express",
         "Nest",
         "Backbone",
+        "Angular",
+        "Knockout",
         "Lodash",
         "jQuery"
       ],
@@ -162,15 +165,18 @@
         "Core",
         "CakePHP",
         "Symfony",
-        "Laravel"
+        "Laravel",
+        "CodeIgnitor"
       ],
       "rating": 4,
       "yearsOfExperience": 6
     },
     {
-      "name": "Docker",
+      "name": "DevOps",
       "level": "Beginner",
-      "keywords": [],
+      "keywords": [
+        "Docker"
+      ],
       "rating": 2,
       "yearsOfExperience": 1
     },
@@ -197,13 +203,26 @@
       "yearsOfExperience": 6
     },
     {
+      "name": "Database",
+      "level": "Advanced",
+      "keywords": [
+        "MySQL",
+        "PgSQL",
+        "Firebase",
+        "Mongo",
+        "SQLLite3"
+      ],
+      "rating": 4,
+      "yearsOfExperience": 8
+    },
+    {
       "name": "Other Tools",
       "level": "Intermediate",
       "keywords": [
         "pgAdmin",
         "SqlYog",
         "PuTTY",
-        "Pagaent",
+        "Pageant",
         "WinSCP"
       ],
       "rating": 3,
@@ -225,13 +244,15 @@
       "name": "Gelato",
       "description": "A fully integrated solution for customized print products.",
       "highlights": [
-        "Moved stock management from external platform to internal application module."
+        "Moved stock management from external platform(Sanity) to internal application module."
       ],
       "keywords": [
         "Symfony 3",
         "Docker",
         "Postgres",
-        "Circle CI"
+        "Terraform",
+        "Circle CI",
+        "Sentry"
       ],
       "startDate": "2021-05-01",
       "url": "https://www.gelato.com/",
@@ -243,21 +264,22 @@
     },
     {
       "name": "Qopla",
-      "description": "Food ordering and order management tool(for restaurants)",
+      "description": "Food ordering(for customers) and order management tool(for restaurants)",
       "highlights": [
         "Integrated Delivery Hero platform with Qopla for accepting orders."
       ],
       "keywords": [
-        "React",
         "Nest JS",
         "MongoDB",
+        "Delivery Hero",
+        "React",
         "Java"
       ],
       "startDate": "2021-03-01",
       "endDate": "2021-04-30",
       "url": "https://www.qopla.com/",
       "roles": [
-        "Senior Software Engineer"
+        "Solution Architect"
       ],
       "entity": "Entity",
       "type": "application"
@@ -266,7 +288,7 @@
       "name": "Nord FondKommission",
       "description": "Tool to suggest and manage customer’s financial profile.",
       "highlights": [
-        "Worked on critical document creation module based on user inputs."
+        "Worked on mission critical features like contract document creation automation module based on user inputs."
       ],
       "keywords": [
         "React",
@@ -290,11 +312,11 @@
       "name": "Admin Portal",
       "description": "Admin tool to manage HVAC systems(and related users, companies, brands, and devices) of 70+ manufacturing companies under Nibe branding.",
       "highlights": [
-        "Started project"
+        "Bootstrapped project single-handedly"
       ],
       "keywords": [
-        "Material UI",
         "React JS",
+        "Material UI",
         "MS Service Fabric",
         "Azure cloud services"
       ],
@@ -312,7 +334,7 @@
       "name": "MyUplink & MyUplink Pro",
       "description": "Client tool to manage HVAC systems of 70+ manufacturing companies under Nibe branding.",
       "highlights": [
-        "Delivered critical modules grouping, scheduling and system diagram."
+        "Delivered critical features grouping, scheduling and system diagram."
       ],
       "keywords": [
         "React JS",
@@ -334,7 +356,7 @@
       "description": "Hotel products / services promotion automation tool.",
       "highlights": [
         "Moved promotion emails from manual to an automated AI/ML scores based process.",
-        "Updated Parser to support booking reciept from Booking, Expedia and similar platforms."
+        "Updated Parser to support booking receipt from Booking, Expedia and similar platforms."
       ],
       "keywords": [
         "CI with Pyro CMS",
@@ -342,8 +364,7 @@
         "MySQL",
         "MongoDB",
         "Jenkins",
-        "AI-ML",
-        "AWS Sagemaker"
+        "AI-ML"
       ],
       "startDate": "2019-11-01",
       "endDate": "2020-02-28",
@@ -363,10 +384,10 @@
         "Added SVG based Avatar maker."
       ],
       "keywords": [
-        "Symfony 1 & 2",
-        "Symfony 4",
         "Backbone JS",
         "Bootstrap",
+        "Symfony 1 & 2",
+        "Symfony 4",
         "Grunt",
         "PostgreSQL",
         "MongoDB"
@@ -384,12 +405,12 @@
       "name": "RAK Wireless",
       "description": "Product catalogue for IoT and networking devices.",
       "highlights": [
-        "Created documentation/download centre based on S3 file architecture."
+        "Created documentation and download centre based on AWS S3 file architecture."
       ],
       "keywords": [
         "Express JS",
-        "AWS S3",
-        "Bootstrap"
+        "Bootstrap",
+        "AWS S3"
       ],
       "startDate": "2018-01-01",
       "endDate": "2020-02-28",
@@ -422,11 +443,14 @@
       "name": "OnePlace",
       "description": "ERP solution",
       "highlights": [
-        "Employee Onboarding",
-        "Employee Documents management",
-        "Attendance/Leave management with 24x7 shifts",
-        "Employee Transportation management",
-        "Salary slips management with encyption",
+        "Employee Onboarding(from vendor referral to training)",
+        "Physical RFID card based attendance capture",
+        "Employee shift management in 24x7 environment with 3 shifts everyday",
+        "Leave management with 2 level of escalations where everything is configurable",
+        "Salary slip management(Import, encrypt, organize for future access where only employees can se their salary slips). ",
+        "Employee document management with encryption",
+        "Transport management(in association with Move In Sync)",
+        "Training module",
         "ACL based user authorization"
       ],
       "keywords": [
@@ -451,7 +475,7 @@
       "name": "UMMS Portal",
       "description": "Complete ERP Solution for Unimarship(A vessel management Company).",
       "highlights": [
-        "Stock procurments",
+        "Stock procurements",
         "Vendor/Supplier management"
       ],
       "keywords": [
@@ -503,6 +527,7 @@
     {
       "name": "Movies",
       "keywords": [
+        "Animation",
         "Hollywood",
         "Bollywood"
       ]
