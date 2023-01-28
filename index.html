@@ -1,1638 +1,1973 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Satyendra Singh</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <style>
-    /********************************************
-            * 	reset from
-            * 	http://meyerweb.com/eric/tools/css/reset/
-            *******************************************/
-
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      vertical-align: baseline;
+    @font-face {
+      font-family: 'icomoon';
+      src: url('fonts/icomoon.eot?z1lat9');
+      src: url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?z1lat9') format('truetype'),
+        url('fonts/icomoon.woff?z1lat9') format('woff'),
+        url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
     }
 
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-
-    body {
+    [class^="icon-"],
+    [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
       line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    ol,
-    ul {
-      list-style: none;
+    .icon-gitlab .path1:before {
+      content: "\e906";
+      color: rgb(252, 109, 38);
     }
 
-    blockquote,
-    q {
-      quotes: none;
+    .icon-gitlab .path2:before {
+      content: "\e907";
+      margin-left: -1em;
+      color: rgb(226, 67, 41);
     }
 
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-      content: none;
+    .icon-gitlab .path3:before {
+      content: "\e908";
+      margin-left: -1em;
+      color: rgb(252, 109, 38);
     }
 
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
+    .icon-gitlab .path4:before {
+      content: "\e909";
+      margin-left: -1em;
+      color: rgb(252, 163, 38);
     }
 
-
-    /****************
-            *	COMMONS
-            ****************/
-
-    body,
-    html {
-      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-size: 13px;
-      color: #40484f;
-      font-weight: 400;
-      letter-spacing: 0;
-      line-height: 1.46153846;
-      text-align: left;
-      -webkit-text-size-adjust: 100%;
+    .icon-gitlab .path5:before {
+      content: "\e90a";
+      margin-left: -1em;
+      color: rgb(226, 67, 41);
     }
 
-    p {
-      display: block;
-      margin-bottom: 1.3em;
+    .icon-gitlab .path6:before {
+      content: "\e90b";
+      margin-left: -1em;
+      color: rgb(252, 109, 38);
     }
 
-    a {
-      color: #0095ff;
+    .icon-gitlab .path7:before {
+      content: "\e90c";
+      margin-left: -1em;
+      color: rgb(252, 163, 38);
+    }
+
+    .icon-gitlab .path8:before {
+      content: "\e90d";
+      margin-left: -1em;
+      color: rgb(226, 67, 41);
+    }
+
+    .icon-meetup .path1:before {
+      content: "\e901";
+      color: rgb(255, 255, 255);
+    }
+
+    .icon-meetup .path2:before {
+      content: "\e902";
+      margin-left: -1.5em;
+      color: rgb(240, 1, 1);
+    }
+
+    .icon-meetup .path3:before {
+      content: "\e903";
+      margin-left: -1.5em;
+      color: rgb(3, 3, 3);
+    }
+
+    .icon-blogger:before {
+      content: "\e900";
+    }
+
+    .icon-exercism:before {
+      content: "\e601";
+    }
+
+    .icon-telegram:before {
+      content: "\e904";
+    }
+
+    .icon-flickr:before {
+      content: "\f16e";
+    }
+
+    .icon-medium:before {
+      content: "\f23a";
+    }
+
+    .icon-heart:before {
+      content: "\f004";
+    }
+
+    .icon-book:before {
+      content: "\f02d";
+    }
+
+    .icon-linkedin:before {
+      content: "\f08c";
+    }
+
+    .icon-twitter:before {
+      content: "\f099";
+    }
+
+    .icon-github:before {
+      content: "\f09b";
+    }
+
+    .icon-link:before {
+      content: "\f0c1";
+    }
+
+    .icon-bars:before {
+      content: "\f0c9";
+    }
+
+    .icon-pinterest:before {
+      content: "\f0d2";
+    }
+
+    .icon-googleplus:before {
+      content: "\f0d5";
+    }
+
+    .icon-circle:before {
+      content: "\f111";
+    }
+
+    .icon-code:before {
+      content: "\f121";
+    }
+
+    .icon-youtube:before {
+      content: "\f167";
+    }
+
+    .icon-stackoverflow:before {
+      content: "\f16c";
+    }
+
+    .icon-bitbucket:before {
+      content: "\f171";
+    }
+
+    .icon-tumblr:before {
+      content: "\f173";
+    }
+
+    .icon-dribbble:before {
+      content: "\f17d";
+    }
+
+    .icon-skype:before {
+      content: "\f17e";
+    }
+
+    .icon-foursquare:before {
+      content: "\f180";
+    }
+
+    .icon-gittip:before {
+      content: "\f184";
+    }
+
+    .icon-gratipay:before {
+      content: "\f184";
+    }
+
+    .icon-stackexchange:before {
+      content: "\f18d";
+    }
+
+    .icon-vimeo:before {
+      content: "\f194";
+    }
+
+    .icon-graduation-cap:before {
+      content: "\f19d";
+    }
+
+    .icon-language:before {
+      content: "\f1ab";
+    }
+
+    .icon-child:before {
+      content: "\f1ae";
+    }
+
+    .icon-behance:before {
+      content: "\f1b5";
+    }
+
+    .icon-spotify:before {
+      content: "\f1bc";
+    }
+
+    .icon-soundcloud:before {
+      content: "\f1be";
+    }
+
+    .icon-codepen:before {
+      content: "\f1cb";
+    }
+
+    .icon-hackernews:before {
+      content: "\f1d4";
+    }
+
+    .icon-lastfm:before {
+      content: "\f202";
+    }
+
+    .icon-angellist:before {
+      content: "\f209";
+    }
+
+    .icon-facebook:before {
+      content: "\f230";
+    }
+
+    .icon-instagram:before {
+      content: "\e905";
+    }
+
+    .icon-trophy:before {
+      content: "\e605";
+    }
+
+    .icon-office:before {
+      content: "\e606";
+    }
+
+    .icon-clock:before {
+      content: "\e60a";
+    }
+
+    .icon-reddit:before {
+      content: "\e609";
+    }
+
+    .icon-profile:before {
+      content: "\e600";
+    }
+
+    .icon-tools:before {
+      content: "\e034";
+    }
+
+    .icon-location:before {
+      content: "\e602";
+    }
+
+    .icon-mail:before {
+      content: "\e603";
+    }
+
+    .icon-phone:before {
+      content: "\e03f";
+    }
+
+    .icon-newspaper:before {
+      content: "\e607";
+    }
+
+    .icon-chevron-down:before {
+      content: "\e60c";
+    }
+
+    .icon-chevron-up:before {
+      content: "\e60d";
+    }
+
+    .icon-dots-three-horizontal:before {
+      content: "\e60b";
+    }
+
+    .icon-thumbs-up:before {
+      content: "\e604";
+    }
+
+    .icon-board:before {
+      content: "\e608";
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .clear-margin {
+      margin: 0;
+    }
+
+    .space-top {
+      margin-top: 10px;
+    }
+
+    .space-right {
+      margin-right: 10px;
+    }
+
+    .space-bottom {
+      margin-bottom: 10px;
+    }
+
+    .mr-5 {
+      margin-right: 5px;
+    }
+
+    .mr-10 {
+      margin-right: 10px;
+    }
+
+    .ml-5 {
+      margin-left: 5px;
+    }
+
+    .labels {
+      line-height: 2;
+    }
+
+    .label-keyword {
+      display: inline-block;
+      background: #7eb0db;
+      color: white;
+      font-size: 0.9em;
+      padding: 5px;
+      border: 1px solid #357ebd;
+      margin-right: 5px;
+    }
+
+    .label-keyword:last-child {
+      margin-right: 0;
+    }
+
+    .label-keyword p {
+      margin: 0;
+    }
+
+    .label-keyword a {
+      color: white;
+    }
+
+    .label-keyword a:hover {
       text-decoration: none;
     }
 
-    a:hover {
-      color: #0c65a5;
-      text-decoration: underline;
+    .link-disguise {
+      color: inherit;
     }
 
-    ul {
-      margin-top: 1rem;
+    .link-disguise:hover {
+      color: inherit;
     }
 
-    li {
-      list-style-type: square;
-      list-style-position: outside;
-      margin-left: 1.3em;
+    .clear-margin {
+      margin: 0;
     }
 
-    .highlights>li>p {
-      margin-bottom: 0.5em;
+    @media (max-width: 992px) {
+      .clear-margin-sm {
+        margin-bottom: 0;
+      }
     }
 
-    h1 {
-      font-size: 2rem;
+    .fs-lg {
+      font-size: 1.33333333em;
+      line-height: 0.75em;
+      vertical-align: -15%;
     }
 
-    h2 {
-      font-size: 1.67rem;
+    .fs-2x {
+      font-size: 2em;
     }
 
-    h3 {
-      font-size: 1.27rem;
+    .fs-3x {
+      font-size: 3em;
     }
 
-    em {
-      color: #757575;
+    .fs-4x {
+      font-size: 4em;
     }
 
-    blockquote {
-      margin-bottom: 1em;
-    }
-
-    strong {
-      font-weight: 700;
-    }
-
-
-    /* main container */
-
-    #resume {
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-
-    /* every section wrapper */
-
-    .section {
-      margin-bottom: 1rem;
-    }
-
-    section .location {
-      margin-right: .5em;
-      color: #606d76;
-      font-weight: 700;
-    }
-
-    #contact {
-      margin-top: .5rem;
-    }
-
-    #profiles .item {
+    .btn-circle-sm {
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 50%;
+      text-align: center;
       padding: 0;
+      outline: none !important;
     }
 
-    #header>#profiles,
-    #header>#contact,
-    #skills,
-    #languages,
-    #interests {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      flex-flow: row wrap;
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
+    /* the version when the icon file is last updated */
+    @font-face {
+      font-family: 'jst-elegant';
+      src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
+      src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+      font-weight: normal;
+      font-style: normal;
     }
 
-    #header>div {
-      line-height: 1.5;
+    [class^="icon-"],
+    [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'jst-elegant' !important;
     }
 
-    #header>div>div {
-      margin-right: 1.2em;
+    body {
+      font-family: 'Lato';
+      background: #f0f0f0;
+      color: #333;
     }
 
-    #header h1.name {
-      font-size: 2.8rem;
-      font-weight: 100;
-      line-height: 100%;
+    .main {
+      padding: 5px;
     }
 
-    #header h2.label {
-      color: #202931;
-      font-size: 1.47rem;
-      font-weight: 300;
+    .card {
+      background: white;
+      border: 1px solid #e6e6e6;
+      border-radius: 3px;
+      min-height: 300px;
+      padding: 10px 0;
     }
 
-    #header .picture {
-      width: 11em;
-      float: right;
-      border-radius: 4px;
+    .card-nested {
+      min-height: 0;
+      border-width: 1px 0 0 0;
     }
 
-    .main-summary {
-      background: #f1f8ff;
-      padding: 1.2em 1em;
-      margin-top: 1rem;
-    }
-
-    .main-summary p {
-      margin: .15em 0 0;
-    }
-
-    h2.section-title {
-      display: inline-block;
-      background: #fff;
-      padding: 0 1em 0.3em 0;
-      color: #ff6d1f;
-      text-transform: uppercase;
-      font-weight: 600;
-      border: none;
-      font-size: .9rem;
-    }
-
-    .section>header {
-      position: relative;
-    }
-
-    .fa {
-      margin-right: 0.25em;
-    }
-
-    .section>header::after {
-      position: absolute;
-      left: 0;
-      top: .7em;
-      height: 1px;
-      background: #ccc;
-      content: "";
-      width: 100%;
-      z-index: -100;
-      display: block;
-    }
-
-    .section.main-summary>section {
-      margin: 0;
-    }
-
-    .section>section>header {
-      font-size: 1.38rem;
-      position: relative;
-      margin-top: .7em;
-    }
-
-    .section>section>header:first-of-type {
-      margin: 0;
-    }
-
-    .section>section>header .space-left {
-      position: absolute;
-      left: -1.56rem;
-      top: 5px;
-      color: #aaa;
-      line-height: 1;
-      opacity: 0;
-    }
-
-    .position,
-    .company,
-    .organization,
-    .institution,
-    .date,
-    .area,
-    .studyType,
-    .title,
-    .awarder {
-      display: inline;
-    }
-
-    .position,
-    .studyType,
-    .area,
-    .title,
-    .language,
-    .name {
-      font-weight: 600;
-    }
-
-    .company::before,
-    .institution::before,
-    .organization::before,
-    .awarder::before {
-      content: "at "
-    }
-
-    .company,
-    .institution,
-    .organization,
-    .awarder {
-      color: #606d76;
-      font-weight: 400;
-    }
-
-    .section header .date {
-      font-size: 1rem;
-      display: inline-table;
-      padding: .1em 0;
-      font-weight: 600;
-    }
-
-    ul.keywords,
-    ul.courses {
-      margin-top: .5em;
-    }
-
-    ul.keywords li,
-    ul.courses li {
-      display: inline-block;
-      margin: 2px 2px 2px 0;
-      padding: 4px 5px 5px;
-      font-size: .9rem;
-      line-height: 1;
-      text-transform: lowercase;
-      color: #3e6d8e;
-      background-color: #dfeaf1;
-      border: 0 solid #dfeaf1;
-      white-space: nowrap;
-    }
-
-    ul.keywords li:hover,
-    ul.courses li:hover {
-      background: #dfeaf0;
-    }
-
-    .item {
-      padding: .5em 0;
-    }
-
-    .gpa {
-      padding-bottom: .5em;
-    }
-
-    .fa.social {
-      font-size: 1.1em;
-    }
-
-
-    /* Social Media Brand Colors */
-
-    .google-plus {
-      color: #dd4b39;
-    }
-
-    .tumblr {
-      color: #32506d;
-    }
-
-    .foursquare {
-      color: #0072b1;
-    }
-
-    .facebook {
-      color: #3b5998;
-    }
-
-    .linkedin {
-      color: #007bb6;
-    }
-
-    .pinterest {
-      color: #cb2027;
-    }
-
-    .dribbble {
-      color: #ea4c89;
-    }
-
-    .instagram {
-      color: #517fa4;
-    }
-
-    .twitter {
-      color: #00aced;
-    }
-
-    .soundcloud {
-      color: #ff3a00;
-    }
-
-    .wordpress {
-      color: #21759b;
-    }
-
-    .youtube {
-      color: #bb0000;
-    }
-
-    .github {
-      color: #171515;
-    }
-
-    .stack-overflow {
-      color: #828386;
-      position: relative;
-    }
-
-    .flickr {
-      color: #ff0084;
-    }
-
-    .stack-overflow::after {
-      position: absolute;
-      left: 0;
-      content: '\f16c';
-      color: #f68a1f;
-      overflow: hidden;
-      height: 100%;
-    }
-
-    .telegram {
-      color: #2291c3;
-    }
-
-    #languages .item,
-    #skills .item,
-    #interests .item {
-      width: 15em;
-      padding: 0 .5em .5em 0;
-      border-bottom: none;
-    }
-
-    #skills .item {
-      width: 16em;
-    }
-
-    #skills .item .keywords {
-      width: 15em;
-    }
-
-
-    /* Skill chart */
-
-    .level {
-      margin-bottom: .5em;
-    }
-
-    .level .bar {
-      border: 1px solid #ddd;
-      display: block;
-      width: 10em;
-      height: 5px;
-      position: relative;
-    }
-
-    .level .bar::after {
-      position: absolute;
+    .card-nested:before,
+    .card-nested:after {
       content: " ";
-      top: 0;
-      left: 0;
-      background: black;
-      height: 5px;
-    }
-
-    .level.beginner .bar::after {
-      background: #EB5F51;
-      width: 2.5em;
-    }
-
-    .level.intermediate .bar::after {
-      background: #ffdf1f;
-      width: 5em;
-    }
-
-    .level.advanced .bar::after,
-    .level.fluent .bar::after {
-      background: #5CB85C;
-      width: 7.5em;
-    }
-
-    .level.master .bar::after,
-    .level.native.speaker .bar::after {
-      background: #59C596;
-      width: 10em;
-    }
-
-    #references .item {
-      padding-left: .5em;
-      border-left: 5px solid #ff6d1f;
-    }
-
-    .toggle-item {
-      visibility: hidden;
-    }
-
-    /******************
-            *	HELPER CLASSES
-            ******************/
-
-    .clear::after {
-      content: "";
       display: table;
+    }
+
+    .card-nested:after {
       clear: both;
     }
 
-    .display {
-      display: block;
-      opacity: 1 !important;
-    }
-
-    .margin1 {
-      margin-bottom: .5rem;
-    }
-
-
-    /****************
-            *		TABLET
-            ****************/
-
-    @media screen and (min-width: 602px) {
-      #resume {
-        width: 80%;
-        margin: 0 auto;
+    @media (max-width: 480px) {
+      .card-nested {
+        padding: 5px 0;
       }
     }
 
+    .background-card {
+      padding: 10px 20px;
+    }
 
-    /****************
-            *		LAPTOP
-            ****************/
+    .card-wrapper {
+      padding: 5px;
+    }
 
-    @media screen and (min-width: 1025px) {
-      li {
-        margin-left: 1.5em;
+    @media (max-width: 992px) {
+      .card-wrapper {
+        float: none !important;
       }
+    }
 
-      #resume {
-        width: 820px;
-        margin: 2rem auto;
+    .background-details .detail {
+      display: table;
+    }
+
+    .background-details .detail .icon {
+      min-width: 45px;
+      max-width: 45px;
+      text-align: center;
+    }
+
+    .background-details .detail .info {
+      width: 100%;
+    }
+
+    .background-details .detail .title,
+    .background-details .detail .icon {
+      color: #707070;
+    }
+
+    .background-details .detail .mobile-title {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .background-details .detail .mobile-title {
+        display: inline-block;
+        margin-left: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        vertical-align: middle;
       }
+    }
 
-      .section>section>header .space-left {
-        opacity: 1;
-        cursor: pointer;
-      }
+    .background-details .detail .icon,
+    .background-details .detail .info {
+      display: table-cell;
+      padding: 0 10px;
+    }
 
-      .section>section {
-        margin-left: 1.67rem;
-      }
-
-      .toggle-item {
-        transform: translate(-9999px);
-      }
-
-      .toggle-item+label {
+    @media (max-width: 480px) {
+      .background-details .detail {
         display: block;
-        margin-top: -16px;
       }
 
-      .toggle-item:checked+label:after {
-        content: '\f0d7';
+      .background-details .detail .icon {
+        max-width: inherit;
+        min-width: inherit;
+        text-align: left;
       }
 
-      .toggle-item+label:after {
-        float: left;
-        cursor: pointer;
-        margin-left: -20px;
-        color: #aaa;
-        font-size: 16px;
-        content: '\f0da';
-        font-family: Fontawesome;
+      .background-details .detail .icon,
+      .background-details .detail .info {
+        display: block;
+        padding: 10px 0;
       }
 
-      .toggle-item~.item {
-        height: 0;
-        opacity: 0;
-      }
-
-      .toggle-item:checked~.item {
-        height: auto;
-        opacity: 1;
-        transition: all .5s linear;
-      }
-
-      .company::before,
-      .institution::before,
-      .organization::before,
-      .awarder::before {
-        content: "| ";
-      }
-
-      .header-left {
-        float: left;
-        width: 70%;
-        word-break: normal;
-      }
-
-      .section header .date {
-        float: right;
-        padding: .2em;
-      }
-
-      .display {
+      .background-details .detail .title {
         display: none;
       }
+    }
 
-      .display:not(.none) {
-        display: block;
+    .info .content.has-sidebar {
+      width: 80%;
+      box-sizing: border-box;
+      float: left;
+      padding: 0 10px;
+      border-right: 1px solid #cdcdcd;
+    }
+
+    @media (max-width: 992px) {
+      .info .content.has-sidebar {
+        width: 100%;
+        border-right: 0;
       }
+    }
+
+    @media (max-width: 480px) {
+      .info .content.has-sidebar {
+        padding: 0 2px;
+      }
+    }
+
+    .info .sidebar {
+      margin-left: 80%;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    @media (max-width: 480px) {
+      ul {
+        padding-left: 25px;
+      }
+    }
+
+    .current-event {
+      font-size: 8px;
+      color: #5ACE24;
+      position: absolute;
+      right: 100%;
+      top: 4px;
+      left: -10px;
+    }
+
+    .mop-wrapper>p:last-child {
+      margin: 0;
+    }
+
+    /*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+    .floating-nav-trigger {
+      width: 50px;
+      height: 50px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      -webkit-transition: background-color 0.5s ease;
+      -o-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease;
+      display: block;
+      border-radius: 50%;
+      text-align: center;
+      background-color: white;
+      font-size: 1.5em;
+      color: #357ebd;
+      z-index: 100;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      text-decoration: none !important;
+    }
+
+    .floating-nav-trigger>[class^="icon-"],
+    .floating-nav-trigger [class*=" icon-"],
+    .floating-nav-trigger>.close-icon {
+      line-height: 50px;
+    }
+
+    .floating-nav-trigger .close-icon {
+      display: none;
+    }
+
+    .floating-nav-trigger:hover {
+      color: #1f496e;
+      background-color: #e6e6e6;
+    }
+
+    .floating-nav-trigger.is-open {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .floating-nav-trigger.is-open .close-icon {
+      display: inherit;
+    }
+
+    .floating-nav-trigger.is-open .icon-bars {
+      display: none;
+    }
+
+    .floating-nav-trigger.is-open:hover {
+      background-color: white;
+    }
+
+    .floating-nav {
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 100% 100%;
+      -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+      -o-transition: transform 0.3s, visibility 0s 0.3s;
+      transition: transform 0.3s, visibility 0s 0.3s;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      position: fixed;
+      z-index: 50;
+      right: 10px;
+      bottom: 10px;
+      background-color: white;
+      width: 90%;
+      max-width: 400px;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    .floating-nav ul {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .floating-nav ul li {
+      border-bottom: 1px solid #eff2f6;
+    }
+
+    .floating-nav ul li a {
+      padding: 20px;
+      text-decoration: none;
+      color: #357ebd;
+      display: block;
+    }
+
+    .floating-nav ul li a:hover {
+      color: #1f496e;
+    }
+
+    .floating-nav ul li:last-child {
+      border-bottom: 0;
+    }
+
+    .floating-nav.is-visible {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: transform 0.3s, visibility 0s 0s;
+      -o-transition: transform 0.3s, visibility 0s 0s;
+      transition: transform 0.3s, visibility 0s 0s;
+      visibility: visible;
+    }
+
+    @media (max-width: 992px) {
+      .profile-card-wrapper {
+        position: relative;
+      }
+    }
+
+    .profile-card-wrapper .profile-card {
+      padding: 10px;
+    }
+
+    .profile-pic {
+      padding: 20px 0;
+    }
+
+    @media (max-width: 992px) {
+      .profile-pic {
+        padding: 10px 0;
+      }
+    }
+
+    .profile-pic img {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 992px) {
+      .name {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-details {
+        text-align: center;
+      }
+    }
+
+    .contact-details .detail {
+      display: table;
+      padding: 10px 0;
+    }
+
+    .contact-details .detail .icon {
+      padding: 0 10px;
+      color: #707070;
+    }
+
+    @media (max-width: 992px) {
+      .contact-details .detail .icon {
+        padding: 0 5px 0 0;
+      }
+    }
+
+    .contact-details .detail .info {
+      font-size: 0.8em;
+    }
+
+    .contact-details .detail .icon,
+    .contact-details .detail .info {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .contact-details .detail {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .contact-details .detail {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 10px;
+      }
+
+      .contact-details .detail .icon,
+      .contact-details .detail .info {
+        display: inline-block;
+      }
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+      .contact-details .detail {
+        float: left;
+        width: 25%;
+      }
+    }
+
+    .social-links {
+      line-height: 2.5;
+    }
+
+    .social-link {
+      margin-left: 5px;
+      min-width: 35px;
+      display: inline-block;
+    }
+
+    .social-link:first-child {
+      margin-left: 0;
+    }
+
+    .social-link:hover {
+      text-decoration: none;
+    }
+
+    .link-github {
+      color: #454545;
+    }
+
+    .link-github:hover,
+    .link-github:focus {
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+
+    .link-twitter {
+      color: #33ccff;
+    }
+
+    .link-twitter:hover,
+    .link-twitter:focus {
+      text-decoration: none;
+      color: #00bfff;
+    }
+
+    .link-blog {
+      color: #f36f24;
+    }
+
+    .link-blog:hover,
+    .link-blog:focus {
+      text-decoration: none;
+      color: #d8560c;
+    }
+
+    .link-linkedin {
+      color: #007bb6;
+    }
+
+    .link-linkedin:hover,
+    .link-linkedin:focus {
+      text-decoration: none;
+      color: #005983;
+    }
+
+    .link-skype {
+      color: #12A5F4;
+    }
+
+    .link-skype:hover,
+    .link-skype:focus {
+      text-decoration: none;
+      color: #0986ca;
+    }
+
+    .link-instagram {
+      color: #e4405f;
+    }
+
+    .link-instagram:hover,
+    .link-instagram:focus {
+      text-decoration: none;
+      color: #d31e40;
+    }
+
+    .link-stackoverflow {
+      color: #8e8e92;
+    }
+
+    .link-stackoverflow:hover,
+    .link-stackoverflow:focus {
+      text-decoration: none;
+      color: #747479;
+    }
+
+    .link-stackexchange {
+      color: #62b0df;
+    }
+
+    .link-stackexchange:hover,
+    .link-stackexchange:focus {
+      text-decoration: none;
+      color: #389bd6;
+    }
+
+    .link-lastfm {
+      color: #d12127;
+    }
+
+    .link-lastfm:hover,
+    .link-lastfm:focus {
+      text-decoration: none;
+      color: #a51a1f;
+    }
+
+    .link-soundcloud {
+      color: #e8822d;
+    }
+
+    .link-soundcloud:hover,
+    .link-soundcloud:focus {
+      text-decoration: none;
+      color: #cc6916;
+    }
+
+    .link-googleplus {
+      color: #dd4b39;
+    }
+
+    .link-googleplus:hover,
+    .link-googleplus:focus {
+      text-decoration: none;
+      color: #c23321;
+    }
+
+    .link-youtube {
+      color: #dd4b39;
+    }
+
+    .link-youtube:hover,
+    .link-youtube:focus {
+      text-decoration: none;
+      color: #c23321;
+    }
+
+    .link-pinterest {
+      color: #bd091f;
+    }
+
+    .link-pinterest:hover,
+    .link-pinterest:focus {
+      text-decoration: none;
+      color: #8c0717;
+    }
+
+    .link-gratipay {
+      color: #630;
+    }
+
+    .link-gratipay:hover,
+    .link-gratipay:focus {
+      text-decoration: none;
+      color: #331a00;
+    }
+
+    .link-vimeo {
+      color: #17b3e8;
+    }
+
+    .link-vimeo:hover,
+    .link-vimeo:focus {
+      text-decoration: none;
+      color: #128fba;
+    }
+
+    .link-behance {
+      color: #2c98cf;
+    }
+
+    .link-behance:hover,
+    .link-behance:focus {
+      text-decoration: none;
+      color: #2379a5;
+    }
+
+    .link-codepen {
+      color: #1c1c1c;
+    }
+
+    .link-codepen:hover,
+    .link-codepen:focus {
+      text-decoration: none;
+      color: #020202;
+    }
+
+    .link-foursquare {
+      color: #fa4778;
+    }
+
+    .link-foursquare:hover,
+    .link-foursquare:focus {
+      text-decoration: none;
+      color: #f91554;
+    }
+
+    .link-reddit {
+      color: #545454;
+    }
+
+    .link-reddit:hover,
+    .link-reddit:focus {
+      text-decoration: none;
+      color: #3b3b3b;
+    }
+
+    .link-spotify {
+      color: #acd200;
+    }
+
+    .link-spotify:hover,
+    .link-spotify:focus {
+      text-decoration: none;
+      color: #829f00;
+    }
+
+    .link-tumblr {
+      color: #2d4661;
+    }
+
+    .link-tumblr:hover,
+    .link-tumblr:focus {
+      text-decoration: none;
+      color: #1d2d3e;
+    }
+
+    .link-dribbble {
+      color: #ce366f;
+    }
+
+    .link-dribbble:hover,
+    .link-dribbble:focus {
+      text-decoration: none;
+      color: #a82959;
+    }
+
+    .link-facebook {
+      color: #4b6daa;
+    }
+
+    .link-facebook:hover,
+    .link-facebook:focus {
+      text-decoration: none;
+      color: #3b5687;
+    }
+
+    .link-angellist {
+      color: black;
+    }
+
+    .link-angellist:hover,
+    .link-angellist:focus {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .link-bitbucket {
+      color: #205081;
+    }
+
+    .link-bitbucket:hover,
+    .link-bitbucket:focus {
+      text-decoration: none;
+      color: #163758;
+    }
+
+    .link-hackernews {
+      color: #ff6600;
+    }
+
+    .link-hackernews:hover,
+    .link-hackernews:focus {
+      text-decoration: none;
+      color: #cc5200;
+    }
+
+    .link-exercism {
+      color: #d81d4e;
+    }
+
+    .link-exercism:hover,
+    .link-exercism:focus {
+      text-decoration: none;
+      color: #ab173e;
+    }
+
+    .link-blogger {
+      color: #FF9234;
+    }
+
+    .link-blogger:hover,
+    .link-blogger:focus {
+      text-decoration: none;
+      color: #ff7701;
+    }
+
+    .link-medium {
+      color: #00AB6C;
+    }
+
+    .link-medium:hover,
+    .link-medium:focus {
+      text-decoration: none;
+      color: #00784c;
+    }
+
+    .link-flickr {
+      color: black;
+    }
+
+    .link-flickr:hover,
+    .link-flickr:focus {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .link-telegram {
+      color: #3BABDD;
+    }
+
+    .link-telegram:hover,
+    .link-telegram:focus {
+      text-decoration: none;
+      color: #2291c3;
+    }
+
+    .card-skills {
+      position: relative;
+    }
+
+    .skill-level {
+      border-radius: 3px;
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 0;
+      width: 10px;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-level .skill-progress {
+      position: absolute;
+      border-radius: 3px;
+      bottom: 0;
+      width: 100%;
+      -webkit-transition: height 1s ease;
+    }
+
+    .skill-level .skill-progress.beginner {
+      height: 50%;
+      background: #e74c3c;
+    }
+
+    .skill-level .skill-progress.intermediate {
+      height: 70%;
+      background: #f1c40f;
+    }
+
+    .skill-level .skill-progress.advanced {
+      height: 80%;
+      background: #428bca;
+    }
+
+    .skill-level .skill-progress.master {
+      height: 95%;
+      background: #5cb85c;
+    }
+
+    .skill-info {
+      margin-left: 15px;
+    }
+
+    @media (max-width: 480px) {
+      .skill-info {
+        margin-left: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .quote {
+        font-size: inherit;
+      }
+    }
+
+    .icon-meetup .path2:before {
+      margin-left: 0;
     }
 
     @media print {
-      #resume {
-        margin: 0;
+      a[href]:after {
+        content: none !important;
+      }
+
+      .profile-card {
+        text-align: center;
+      }
+
+      .profile-pic {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .profile-pic img {
+        border-radius: 0;
+      }
+
+      .name-and-profession {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+
+      .contact-details .detail {
+        position: relative;
+        float: left;
+        width: 25%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
         padding: 0;
-        -ms-word-wrap: break-word;
-        word-wrap: break-word;
-        line-height: 1.3;
-        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
       }
 
-      @page {
-        margin: 1cm 1.4cm;
-      }
-
-      .item-count {
+      .floating-nav,
+      .floating-nav-trigger {
         display: none;
       }
 
-      .company::before,
-      .institution::before,
-      .organization::before,
-      .awarder::before {
-        content: "at ";
-      }
-
-      .main-summary {
-        padding: 2rem 0;
-      }
-
-      .section {
-        margin: .8rem 0;
-        padding: 0;
-      }
-
-      .section header {
-        padding-bottom: .15rem;
-      }
-
-      .section .location {
-        padding-bottom: .15rem;
-      }
-
-      .stack-overflow::after {
-        content: "";
-      }
-
-      .fa.social {
-        color: #828386;
-      }
-
-      ul {
-        margin-top: .4em;
-      }
-
-      ul,
-      li {
-        padding: 0;
-      }
-
-      ul.keywords li,
-      ul.courses li {
-        margin: 0;
-        padding: 0;
-        font-size: .8rem;
-        text-transform: lowercase;
-      }
-
-      ul.keywords li::after,
-      ul.courses li::after {
-        padding: 0 0 0 .1rem;
-        content: " |";
-      }
-
-      ul.keywords::before,
-      ul.courses::before {
-        font-size: .8rem;
-        font-weight: 600;
-      }
-
-      ul.keywords::before {
-        content: "Skills acquired: ";
-      }
-
-      #skills .keywords::before {
-        content: '';
-      }
-
-      .section p {
-        margin: 0;
-        padding: 0;
-      }
-
-      ul.courses::before {
-        content: "Major courses: ";
-      }
-
-      ul.keywords li:last-of-type::after,
-      ul.courses li:last-of-type::after {
-        content: "";
-      }
-
-      .level em {
-        font-style: normal;
-        padding: .1em 0;
-      }
-
-      .level .bar {
-        display: none;
-      }
-
-      #profiles .item {
-        padding: 0;
-      }
-
-      .item.display {
-        display: block;
-        opacity: 1 !important;
+      .pagebreak {
+        page-break-before: always;
       }
     }
   </style>
 </head>
 
-<body>
-  <div id="resume">
-    <header id="header" class="clear">
-      <img class="picture"
-        src="https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.png"
-        alt="Satyendra Singh" />
-      <div class="middle">
-        <h1 class="name">Satyendra Singh</h1>
-
-        <h2 class="label">Fullstack JavaScript Engineer</h2>
-
-      </div> <span class="location">
-        <span class="city">Jaipur,</span> <span class="region">Rajasthan</span>
-        <span class="countryCode">IN</span>
-      </span>
-      <div id="contact">
-        <div class="website"> <span class="fa fa-external-link"></span>
-          <a target="_blank" target="_blank"
-            href="https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/resume.pdf">resume</a>
-
-        </div>
-        <div class="email"> <span class="fa fa-envelope-o"></span>
-          <a href="mailto:satyendraajm@live.com">satyendraajm@live.com</a>
-
-        </div>
-        <div class="phone"> <span class="fa fa-mobile"></span>
-          <a href="tel:9782147996">9782147996</a>
-
-        </div>
-      </div>
-      <div id="profiles">
-        <div class="item">
-          <div class="username"> <span class="fa fa-github github social"></span>
-            <span class="url">
-              <a target="_blank" href="https://satyendrachaudhary.github.io/">satyendrachaudhary</a>
-            </span>
+<body itemscope="itemscope" itemtype="http://schema.org/Person">
+  <div class="container-fluid">
+    <div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i
+          class="icon-bars"></i><span class="close-icon">&times;</span></a>
+      <nav class="floating-nav js-floating-nav">
+        <ul class="list-unstyled">
+          <li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li>
+          <li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li>
+          <li><a href="#projects-experience"><i class="mr-10 icon-code"></i>Projects Experience</a></li>
+          <li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li>
+          <li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li>
+          <li><a href="#certificates"><i class="mr-10 icon-profile"></i>Certificates</a></li>
+          <li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li>
+        </ul>
+      </nav>
+      <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+        <div class="card profile-card"><span class="profile-pic-container">
+            <div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100"
+                alt="Satyendra Singh" src="https://avatars.githubusercontent.com/u/8644434?v=4" itemprop="image" />
+            </div>
+            <div class="name-and-profession text-center">
+              <h3 itemprop="name"><b>Satyendra Singh</b></h3>
+              <h5 class="text-muted" itemprop="jobTitle">Fullstack JavaScript Engineer</h5>
+            </div>
+          </span>
+          <hr />
+          <div class="contact-details clearfix">
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span
+                class="info">Jaipur, Rajasthan, IN</span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info"
+                itemprop="telephone">9782147996</span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a
+                  class="link-disguise" href="mailto:satyendraajm@live.com"
+                  itemprop="email">satyendraajm@live.com</a></span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a
+                  href="https://registry.jsonresume.org/satyendrachaudhary?theme=elegant"
+                  target="_blank">https://registry.jsonresume.org/satyendrachaudhary?theme=elegant</a></span></div>
+            <div class="detail"><span class="icon" title="Languages I speak"><i
+                  class="icon fs-lg icon-language"></i></span><span class="info">English, Hindi</span></div>
           </div>
-        </div>
-        <div class="item">
-          <div class="username"> <span class="fa fa-linkedin linkedin social"></span>
-            <span class="url">
-              <a target="_blank" href="https://www.linkedin.com/in/satyendrachoudhary/">satyendrachoudhary</a>
-            </span>
+          <hr />
+          <div class="social-links text-center">
+            <div><a class="fs-2x social-link link-github icon-github" href="https://satyendrachaudhary.github.io/"
+                target="_blank" data-toggle="tooltip" title="Satyendra Singh on GitHub"></a><a
+                class="fs-2x social-link link-linkedin icon-linkedin"
+                href="https://www.linkedin.com/in/satyendrachoudhary/" target="_blank" data-toggle="tooltip"
+                title="Satyendra Singh on LinkedIn"></a><a class="fs-2x social-link link-gitconnected icon-gitconnected"
+                href="https://gitconnected.com/satyendrachaudhary" target="_blank" data-toggle="tooltip"
+                title="Satyendra Singh on gitconnected"></a></div>
           </div>
-        </div>
-      </div>
-    </header>
-    <section class="section main-summary">
-      <section>
-        <div>
-          <p>I am a JavaScript enthusiast building and improving web world from last
-            8 years. Primarily I like to work with React, Express, Nest. Always open
-            to learn something new. When I am not coding, I love to wander in wilderness.</p>
         </div>
       </section>
-    </section>
-    <section class="section margin1">
-      <header>
-        <h2 class='section-title'>Skills</h2>
-
-      </header>
-      <section id="skills">
-        <div class="item">
-          <h3 class="name">
-            JavaScript
-          </h3>
-
-          <div class="level master"> <em>Master</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>React JS</li>
-            <li>Express</li>
-            <li>Nest</li>
-            <li>Lodash</li>
-            <li>jQuery</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            PHP
-          </h3>
-
-          <div class="level advanced"> <em>Advanced</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>Core</li>
-            <li>CakePHP</li>
-            <li>Symfony</li>
-            <li>Laravel</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            DevOps
-          </h3>
-
-          <div class="level beginner"> <em>Beginner</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>Docker</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Git
-          </h3>
-
-          <div class="level advanced"> <em>Advanced</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>CLI</li>
-            <li>Sublime Merge</li>
-            <li>Github Desktop</li>
-            <li>GitLens</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Text Editors
-          </h3>
-
-          <div class="level advanced"> <em>Advanced</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>VS Code</li>
-            <li>Sublime Text 3</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Database
-          </h3>
-
-          <div class="level advanced"> <em>Advanced</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>MySQL</li>
-            <li>PgSQL</li>
-            <li>Graph DB(Gremlin API)</li>
-            <li>Mongo</li>
-            <li>Firebase</li>
-            <li>SQLLite3</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Other Tools
-          </h3>
-
-          <div class="level intermediate"> <em>Intermediate</em>
-
-            <div class="bar"></div>
-          </div>
-          <ul class="keywords">
-            <li>pgAdmin</li>
-            <li>SqlYog</li>
-            <li>PuTTY</li>
-            <li>Pageant</li>
-            <li>WinSCP</li>
-          </ul>
-        </div>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
-
-      </header>
-      <section id="work">
-        <section class="work-item">
-          <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
-          <label for="work-item-0"></label>
-          <header>
-            <div class="position">Full-stack Engineer</div>
-            <div class="company">UBS India Pvt. Ltd.</div>
-            <div class="date"> <span class="startDate">October 2021</span> <span class="endDate">-
-                Current</span>
-
+      <section class="col-md-9 card-wrapper pull-right">
+        <div class="card background-card">
+          <h4 class="text-uppercase">Background</h4>
+          <hr />
+          <div class="background-details">
+            <div class="detail" id="about">
+              <div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">About</h4>
+                <div class="card card-nested">
+                  <div class="content mop-wrapper" itemprop="description">
+                    <p>Experienced JavaScript developer with 9 years in crafting high-quality, efficient, and scalable
+                      web applications. Proficient in React, Express and Nest, with a proven track record of delivering
+                      successful projects in a fast-paced environment.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.linkedin.com/company/ubs/">https://www.linkedin.com/company/ubs/</a>
-          </span>
-          <div class="item" id="work-item">
-            <div class="summary">
-              <p>
-              <p>Developing features using React, Express, and Cosmos DB(Gremlin API) in
-                an agile environment. Also as technical senior, taking weekly learning
-                sessions to keep team up to date with latest technologies.</p>
-              </p>
+            <div class="detail" id="work-experience">
+              <div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Work Experience</h4>
+                <ul class="list-unstyled clear-margin">
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip"
+                          title="Currently Working" data-placement="left"></i><strong>Full-stack
+                          Engineer</strong>,&nbsp;<a href="https://www.ubs.com/in/en.html" target="_blank">UBS India
+                          Pvt. Ltd.</a></p>
+                      <p class="text-muted"><small><span class="space-right">Oct, 2021 - Present</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>UBS is one of the leading investment bank in the world.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Tech Lead</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Taking weekly interactive technical sessions</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><strong>Senior Software Engineer</strong>,&nbsp;<a
+                          href="https://www.fiftyfivetech.io/" target="_blank">FiftyFive Technologies</a></p>
+                      <p class="text-muted"><small><span class="space-right">Mar, 2020 - Oct, 2021</span><span><i
+                              class="icon-clock mr-5"></i>1 year 6 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>FFT outsources offshore/onshore high quality services.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Tech Lead</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Client Communication</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Intern management</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>JavaScript / React</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Node / Express / Nest</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Docker</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Go / HuGo</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><strong>Senior Software Engineer</strong>,&nbsp;<a
+                          href="https://www.thepsi.com/" target="_blank">Pratham Software (PSI)</a></p>
+                      <p class="text-muted"><small><span class="space-right">May, 2017 - Feb, 2020</span><span><i
+                              class="icon-clock mr-5"></i>2 years 8 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>PSI is a global provider of software solutions and consulting services.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>JavaScript / Backbone / React</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Node / Express / Hapi</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Client Communication</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><strong>PHP Developer</strong>,&nbsp;<a
+                          href="https://www.systweak.com/" target="_blank">Systweak Software</a></p>
+                      <p class="text-muted"><small><span class="space-right">Apr, 2015 - May, 2017</span><span><i
+                              class="icon-clock mr-5"></i>2 years 1 month</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Systweak is a global software company which provides software and services.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>ERP solution for company's requirements</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Attendance management via physical RFID cards</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Various Product landing pages</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><strong>CakePHP Developer</strong>,&nbsp;<a
+                          href="https://www.wedigtech.com/" target="_blank">WeDig Tech Solutions Private Limited</a></p>
+                      <p class="text-muted"><small><span class="space-right">Mar, 2014 - Mar, 2015</span><span><i
+                              class="icon-clock mr-5"></i>1 year</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>WeDig incorporates the latest trends and technologies to provide holistic solutions.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>CakePHP</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Sencha Touch</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Hybrid mobile apps</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="work-item">
-          <input id="work-item-1" type="checkbox" class="toggle-item" />
-          <label for="work-item-1"></label>
-          <header>
-            <div class="position">Senior Software Engineer</div>
-            <div class="company">FiftyFive Technologies</div>
-            <div class="date"> <span class="startDate">March 2020</span> <span class="endDate">- October
-                2021</span>
+            <div class="detail" id="projects-experience">
+              <div class="icon"><i class="fs-lg icon-code"></i><span class="mobile-title">Projects Experience</span>
+              </div>
+              <div class="info">
+                <h4 class="title text-uppercase">Projects Experience</h4>
+                <ul class="list-unstyled clear-margin">
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip"
+                          title="Currently Working"
+                          data-placement="left"></i><strong>Arena</strong><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Oct, 2021 - Present</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>A gamification platform for UBS employees to collaborate with each other in various
+                          online/offline events.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Tech Lead</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Bringed down infra cost by 46% by optimizing code and services within a year.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Rewrote two of four core feature of the application single-handedly in 2 quaters.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Introduced clean code practices and best practices to the application, which resulted in a
+                            more maintainable codebase.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Create dozens of critical components in a short span of time. Which brought the application
+                            to a new level of performance with less bugs and development time to hours from weeks.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.gelato.com/"
+                          target="_blank"><strong>Gelato</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">May, 2021 - Oct, 2021</span><span><i
+                              class="icon-clock mr-5"></i>5 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>A fully integrated solution for customized printed products.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Migration of stock management from external platform(Sanity) to internal infra.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Reverse-engineered and created stock management APIs.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.qopla.com/"
+                          target="_blank"><strong>Qopla</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Mar, 2021 - Apr, 2021</span><span><i
+                              class="icon-clock mr-5"></i>2 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Food ordering app for end users and order management tool for restaurant staff.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Integrated Delivery Hero(DH) platform with Qopla for accepting orders.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Automated order management for restaurants using DH.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Also update DH with the latest order status.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://nordfk.se/sv/" target="_blank"><strong>Nord
+                            FondKommission</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Jul, 2020 - Dec, 2020</span><span><i
+                              class="icon-clock mr-5"></i>6 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Tool to suggest and manage customer’s financial profile.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Upgraded mission critical feature - automatic contract document creation on user inputs.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://admin.myuplink.com"
+                          target="_blank"><strong>Admin Portal | MyUplink</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Mar, 2020 - 2021-04-31</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Admin tool to manage HVAC systems(and related users, companies, brands, and devices) of 70+
+                          manufacturing companies under Nibe branding.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Bootstrapped project single-handedly</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Create dozens of critical and reusable components to reduce development time</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://pro.myuplink.com"
+                          target="_blank"><strong>MyUplink &amp; MyUplink Pro</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Jun, 2020 - Apr, 2021</span><span><i
+                              class="icon-clock mr-5"></i>11 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Client tool to manage HVAC systems of 70+ manufacturing companies under Nibe branding.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Delivered critical modules grouping, scheduling and system diagrams.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Created Virtual device using Electron for development &amp; testing purposes.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.hinstant.com/"
+                          target="_blank"><strong>Hinstant</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Nov, 2019 - Feb, 2020</span><span><i
+                              class="icon-clock mr-5"></i>3 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Hotel products / services promotion automation tool.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Automated email promotions based on AI/ML scores.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Add email parsers to support booking receipt from Booking.com, Expedia and similar
+                            platforms.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.beintent.com/"
+                          target="_blank"><strong>BeIntent</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Dec, 2017 - Oct, 2019</span><span><i
+                              class="icon-clock mr-5"></i>1 year 10 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Physical &amp; Mental Wellbeing tool.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Added SVG based Avatar maker.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Delivered gamification features for the application.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Multiple visual reports with ChartJS which can dowloaded and sent as email too.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.rakwireless.com/"
+                          target="_blank"><strong>RAK Wireless</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Jan, 2018 - Feb, 2020</span><span><i
+                              class="icon-clock mr-5"></i>2 years 1 month</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Product catalogue for IoT and networking devices.</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Product landing pages</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Automatic documentation and download centre based on AWS S3 file architecture.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.vaultintel.com/"
+                          target="_blank"><strong>Vault IQ</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">May, 2017 - Dec, 2017</span><span><i
+                              class="icon-clock mr-5"></i>6 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Risk &amp; EHS software solution.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="-"
+                          target="_blank"><strong>OnePlace</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Nov, 2015 - May, 2017</span><span><i
+                              class="icon-clock mr-5"></i>1 year 6 months</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>ERP solution</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Physical RFID card based attendance capture</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Employee Onboarding(from vendor referral to training)</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Employee shift management in 24x7 environment with 3 shifts per day</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Leave management with configurable multi-level escalations</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Employee document management with encryption</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Salary slips management(Import, encrypt, organization for future private access).</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Transport management(in association with 'Move In Sync')</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Training modules</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>ACL based user authorization</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative"><a href="https://www.intuitships-umms.com"
+                          target="_blank"><strong>UMMS Portal</strong></a><span>,&nbsp;Entity</span></p>
+                      <p class="text-muted"><small><span class="space-right">Feb, 2015 - Mar, 2015</span><span><i
+                              class="icon-clock mr-5"></i>1 month</span></small></p>
+                      <div class="mop-wrapper space-bottom">
+                        <p>Complete ERP Solution for Unimarship(A vessel management Company).</p>
+                      </div>
+                      <ul>
+                        <li class="mop-wrapper">
+                          <p>Automated Vendor/Supplier management.</p>
+                        </li>
+                        <li class="mop-wrapper">
+                          <p>Automated stock procurements, shipments, invoices, and other processes.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </header> <span class="website">
-            <a target="_blank"
-              href="https://www.linkedin.com/company/40663997">https://www.linkedin.com/company/40663997</a>
-          </span>
-          <div class="item" id="work-item">
-            <div class="summary">
-              <p>
-              <p>Primarily working on all kinds of JS based technologies and frameworks.</p>
-              </p>
+            <div class="detail" id="skills">
+              <div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Skills</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Frontend</strong>
+                        <div class="space-top labels"><span class="label label-keyword">
+                            <p>HTML / JSX</p>
+                          </span><span class="label label-keyword">
+                            <p>CSS / SCSS / BEM / Styled Components</p>
+                          </span><span class="label label-keyword">
+                            <p>Javascript / Typescript</p>
+                          </span><span class="label label-keyword">
+                            <p>React / Next</p>
+                          </span><span class="label label-keyword">
+                            <p>Redux / Redux Toolkit</p>
+                          </span><span class="label label-keyword">
+                            <p>GraphQL / Apollo</p>
+                          </span><span class="label label-keyword">
+                            <p>Lodash / jQuery</p>
+                          </span></div>
+                      </div>
+                    </li>
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Backend</strong>
+                        <div class="space-top labels"><span class="label label-keyword">
+                            <p>Node / Express / Nest</p>
+                          </span><span class="label label-keyword">
+                            <p>PHP / Symfony / Laravel</p>
+                          </span><span class="label label-keyword">
+                            <p>MySQL / Graph DB(Gremlin API) / SQLLite3 / Mongo / Firebase</p>
+                          </span></div>
+                      </div>
+                    </li>
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Beginner" data-placement="left">
+                        <div class="skill-progress beginner"></div>
+                      </div>
+                      <div class="skill-info"><strong>DevOps</strong>
+                        <div class="space-top labels"><span class="label label-keyword">
+                            <p>Docker</p>
+                          </span><span class="label label-keyword">
+                            <p>Jenkins</p>
+                          </span><span class="label label-keyword">
+                            <p>Azure</p>
+                          </span><span class="label label-keyword">
+                            <p>Caching</p>
+                          </span></div>
+                      </div>
+                    </li>
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Git</strong>
+                        <div class="space-top labels"><span class="label label-keyword">
+                            <p>CLI</p>
+                          </span><span class="label label-keyword">
+                            <p>Sublime Merge</p>
+                          </span><span class="label label-keyword">
+                            <p>Github Desktop</p>
+                          </span><span class="label label-keyword">
+                            <p>GitLens</p>
+                          </span></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="work-item">
-          <input id="work-item-2" type="checkbox" class="toggle-item" />
-          <label for="work-item-2"></label>
-          <header>
-            <div class="position">Senior Software Engineer</div>
-            <div class="company">Pratham Software (PSI)</div>
-            <div class="date"> <span class="startDate">May 2017</span> <span class="endDate">- February
-                2020</span>
+            <div class="detail" id="education">
+              <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span>
+              </div>
+              <div class="info">
+                <h4 class="title text-uppercase">Education</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin relative"><strong>Computer Applications, Master of Computer
+                            Application,&nbsp;</strong>Suresh Gyan Vihar University</p>
+                        <p class="text-muted"><small>Aug, 2010 - May, 2013</small></p><i>7.45</i>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin relative"><strong>Computer Applications, Bachelor of Computer
+                            Application,&nbsp;</strong>Maharshi Dayanand Saraswati University</p>
+                        <p class="text-muted"><small>Aug, 2007 - May, 2010</small></p><i>70%</i>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin relative"><strong>Elementary Education, ,&nbsp;</strong>Demonstration
+                          Multipurpose School</p>
+                        <p class="text-muted clear-margin"><small>Jul, 2000 - May, 2007</small></p><i></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </header> <span class="website">
-            <a target="_blank"
-              href="https://www.linkedin.com/company/208203">https://www.linkedin.com/company/208203</a>
-          </span>
-          <div class="item" id="work-item">
-            <div class="summary">
-              <p>
-              <p>Worked as JS(Backbone, Node/Express) developer</p>
-              </p>
+            <div class="detail" id="certificates">
+              <div class="icon"><i class="fs-lg icon-profile"></i><span class="mobile-title">Certificates</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Certificates</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="https://ude.my/UC-0e7c7a1e-08b3-4314-b23e-1ce9269fef85/" target="_blank">Agile
+                              Project Management; Agile Delivery</a>,&nbsp;</strong>Udemy</p>
+                        <p class="text-muted"><small>Issued on: Jun 01, 2022</small></p>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="https://ude.my/UC-27d2b9df-db67-4fe0-a29b-a5173bf865be/" target="_blank">Advanced
+                              React Component Patterns</a>,&nbsp;</strong>Udemy</p>
+                        <p class="text-muted"><small>Issued on: Apr 01, 2022</small></p>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="https://www.freecodecamp.org/certification/satyendrachaudhary/javascript-algorithms-and-data-structures"
+                              target="_blank">JavaScript Algorithms &amp; Data Structure</a>,&nbsp;</strong>Free Code
+                          Camp</p>
+                        <p class="text-muted"><small>Issued on: Oct 24, 2019</small></p>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="https://cutshort.io/certificate/797"
+                              target="_blank">Node.js</a>,&nbsp;</strong>CutShort</p>
+                        <p class="text-muted"><small>Issued on: Jan 09, 2020</small></p>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="https://www.sololearn.com/profile/1125245/"
+                              target="_blank">JavaScript</a>,&nbsp;</strong>SoloLearn</p>
+                        <p class="text-muted"><small>Issued on: Nov 01, 2016</small></p>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="https://www.sololearn.com/profile/1125245/"
+                              target="_blank">HTML</a>,&nbsp;</strong>SoloLearn</p>
+                        <p class="text-muted"><small>Issued on: Nov 01, 2016</small></p>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin" itemprop="certificate"><strong><a
+                              href="http://www.sololearn.com/Profile/1125245/"
+                              target="_blank">SQL</a>,&nbsp;</strong>SoloLearn</p>
+                        <p class="text-muted"><small>Issued on: Nov 01, 2016</small></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="work-item">
-          <input id="work-item-3" type="checkbox" class="toggle-item" />
-          <label for="work-item-3"></label>
-          <header>
-            <div class="position">PHP Developer</div>
-            <div class="company">Systweak Software</div>
-            <div class="date"> <span class="startDate">April 2015</span> <span class="endDate">- May
-                2017</span>
-            </div>
-          </header> <span class="website">
-            <a target="_blank"
-              href="https://www.linkedin.com/company/3739341">https://www.linkedin.com/company/3739341</a>
-          </span>
-          <div class="item" id="work-item">
-            <div class="summary">
-              <p>
-              <p>Worked as CakePHP developer</p>
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="work-item">
-          <input id="work-item-4" type="checkbox" class="toggle-item" />
-          <label for="work-item-4"></label>
-          <header>
-            <div class="position">CakePHP Developer</div>
-            <div class="company">WeDig Tech solutions Private Limited</div>
-            <div class="date"> <span class="startDate">March 2014</span> <span class="endDate">- March
-                2015</span>
-            </div>
-          </header> <span class="website">
-            <a target="_blank"
-              href="https://www.linkedin.com/company/1498793">https://www.linkedin.com/company/1498793</a>
-          </span>
-          <div class="item" id="work-item">
-            <div class="summary">
-              <p>
-              <p>Worked as CakePHP &amp; Sencha developer</p>
-              </p>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Projects <span class="item-count">(12+)</span></h2>
-      </header>
-      <section id="projects">
-        <section class="project-item">
-          <header>
-            <div class="position">Arena</div>
-            <div class="date"> <span class="startDate">Oct 2021</span>
-              <span class="endDate">- Current</span>
-            </div>
-          </header>
-          <span class="website">
-            <a href="javascript:void(0);">(Internal)</a>
-          </span>
-
-          <ul class="keywords">
-            <li>React JS</li>
-            <li>Express</li>
-            <li>Graph DB(Gremlin API)</li>
-            <li>Azure</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Introduced clean code practices and best practices to the application.
-                  Which resulted in a more maintainable codebase.</p>
-              </li>
-              <li>
-                <p>Create dozens of critical components in a short span of time. Which brought
-                  the application to a new level of performance with less bugs and development
-                  time to hours from weeks.</p>
-              </li>
-              <li>
-                <p>Rewrote one of four core feature of the application single-handedly in
-                  4 months using clean code &amp; architecture solutions.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">Gelato</div>
-            <div class="date"> <span class="startDate">May 2021</span>
-              <span class="endDate">- Oct 2021</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.gelato.com/">https://www.gelato.com/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>Symfony 3</li>
-            <li>Docker</li>
-            <li>Postgres</li>
-            <li>Terraform</li>
-            <li>Circle CI</li>
-            <li>Sentry</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Moved stock management from external platform(Sanity) to internal application
-                  module.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">Qopla</div>
-            <div class="date"> <span class="startDate">March 2021</span>
-              <span class="endDate">- April 2021</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.qopla.com/">https://www.qopla.com/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>Nest JS</li>
-            <li>MongoDB</li>
-            <li>Delivery Hero</li>
-            <li>React JS</li>
-            <li>Java</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Integrated Delivery Hero(DH) platform with Qopla for accepting orders.</p>
-              </li>
-              <li>
-                <p>Automated order management for restaurants using DH.</p>
-              </li>
-              <li>
-                <p>Also update DH with the latest order status.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">Nord FondKommission</div>
-            <div class="date"> <span class="startDate">July 2020</span>
-              <span class="endDate">- December 2020</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://nordfk.se/sv/">https://nordfk.se/sv/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>React JS</li>
-            <li>Bootstrap</li>
-            <li>Slim PHP</li>
-            <li>Assently</li>
-            <li>BrickNode</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Worked on mission critical features like contract document creation automation
-                  module based on user inputs.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">Admin Portal</div>
-            <div class="date"> <span class="startDate">March 2020</span>
-              <span class="endDate">- April 2021</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://admin.myuplink.com">https://admin.myuplink.com</a>
-          </span>
-
-          <ul class="keywords">
-            <li>React JS</li>
-            <li>Material UI</li>
-            <li>MS Service Fabric</li>
-            <li>Azure cloud services</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Bootstrapped project single-handedly</p>
-              </li>
-              <li>
-                <p>Create dozens of critical and reusable components to reduce development
-                  time</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">MyUplink &amp; MyUplink Pro</div>
-            <div class="date"> <span class="startDate">June 2020</span>
-              <span class="endDate">- April 2021</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://pro.myuplink.com">https://pro.myuplink.com</a>
-          </span>
-
-          <ul class="keywords">
-            <li>React JS</li>
-            <li>Bootstrap</li>
-            <li>MS Service Fabric</li>
-            <li>Azure cloud services</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Delivered critical features grouping, scheduling and system diagrams.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">Hinstant</div>
-            <div class="date"> <span class="startDate">November 2019</span>
-              <span class="endDate">- February 2020</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.hinstant.com/">https://www.hinstant.com/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>CI with Pyro CMS</li>
-            <li>Express JS</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Jenkins</li>
-            <li>AI-ML</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Moved promotion emails from manual to an automated AI/ML scores based
-                  process.</p>
-              </li>
-              <li>
-                <p>Updated email parser to support booking receipt from Booking.com, Expedia
-                  and similar platforms.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">BeIntent</div>
-            <div class="date"> <span class="startDate">December 2017</span>
-              <span class="endDate">- October 2019</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.beintent.com/">https://www.beintent.com/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>Backbone JS</li>
-            <li>Bootstrap</li>
-            <li>Symfony 1 &amp; 2</li>
-            <li>Symfony 4</li>
-            <li>Grunt</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Worked on gamification features for the application.</p>
-              </li>
-              <li>
-                <p>Added SVG based Avatar maker.</p>
-              </li>
-              <li>
-                <p>Added several types of downloadable reports for admins built with ChartJS.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">RAK Wireless</div>
-            <div class="date"> <span class="startDate">January 2018</span>
-              <span class="endDate">- February 2020</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.rakwireless.com/">https://www.rakwireless.com/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>Express JS</li>
-            <li>Bootstrap</li>
-            <li>AWS S3</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Created documentation and download centre based on AWS S3 file architecture.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">Vault IQ</div>
-            <div class="date"> <span class="startDate">May 2017</span>
-              <span class="endDate">- December 2017</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.vaultintel.com/">https://www.vaultintel.com/</a>
-          </span>
-
-          <ul class="keywords">
-            <li>Zend framework</li>
-            <li>MSSQL</li>
-            <li>jQuery</li>
-          </ul>
-          <div class="item"></div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">OnePlace</div>
-            <div class="date"> <span class="startDate">November 2015</span>
-              <span class="endDate">- May 2017</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="javascript:void(0);">(Internal)</a>
-          </span>
-
-          <ul class="keywords">
-            <li>PHP</li>
-            <li>Bootstrap</li>
-            <li>MySql</li>
-            <li>MS Access</li>
-            <li>ZiCom(3rdParty Access Card System)</li>
-            <li>jQuery</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Employee Onboarding(from vendor referral to training)</p>
-              </li>
-              <li>
-                <p>Physical RFID card based attendance capture</p>
-              </li>
-              <li>
-                <p>Employee shift management in 24x7 environment with 3 shifts everyday</p>
-              </li>
-              <li>
-                <p>Leave management with 2 level of escalations where everything is configurable</p>
-              </li>
-              <li>
-                <p>Salary slip management(Import, encrypt, organize for future access where
-                  only employees can se their salary slips).</p>
-              </li>
-              <li>
-                <p>Employee document management with encryption</p>
-              </li>
-              <li>
-                <p>Transport management(in association with Move In Sync)</p>
-              </li>
-              <li>
-                <p>Training module</p>
-              </li>
-              <li>
-                <p>ACL based user authorization</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-          <header>
-            <div class="position">UMMS Portal</div>
-            <div class="date"> <span class="startDate">February 2015</span>
-              <span class="endDate">- March 2015</span>
-
-            </div>
-          </header> <span class="website">
-            <a target="_blank" href="https://www.intuitships-umms.com">https://www.intuitships-umms.com</a>
-          </span>
-
-          <ul class="keywords">
-            <li>CakePHP</li>
-            <li>TCPDF</li>
-            <li>PHPExcel</li>
-            <li>PHPMailer</li>
-            <li>MySql</li>
-            <li>jQuery</li>
-          </ul>
-          <div class="item">
-            <ul class="highlights">
-              <li>
-                <p>Automated of stock procurements, shipments, invoices, and other processes.</p>
-              </li>
-              <li>
-                <p>Automated of Vendor/Supplier management.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
-      </header>
-      <section id="education">
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">Master of Computer Application</div>
-              <div class="area">Computer Science</div>
-              <div class="institution">Suresh Gyan Vihar University</div>
-            </div>
-            <div class="date"> <span class="startDate">
-                2010
-              </span>
-              <span class="endDate">
-                - 2013
-              </span>
-
-            </div>
-          </header>
-          <div class="item">
-            <div class='gpa'> <strong> Grade:</strong> <span>7.45</span>
-
-            </div>
-          </div>
-        </section>
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">Bachelor of Computer Application</div>
-              <div class="area">Computer Science</div>
-              <div class="institution">Management And Commerce Institute Of Global Synergy</div>
-            </div>
-            <div class="date"> <span class="startDate">
-                2007
-              </span>
-              <span class="endDate">
-                - 2010
-              </span>
-
-            </div>
-          </header>
-          <div class="item">
-            <div class='gpa'> <strong> Grade:</strong> <span>70%</span>
-
-            </div>
-          </div>
-        </section>
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType"></div>
-              <div class="area">Elementary Education</div>
-              <div class="institution">Demonstration Multipurpose School</div>
-            </div>
-            <div class="date"> <span class="startDate">
-                2000
-              </span>
-              <span class="endDate">
-                - 2007
-              </span>
-
-            </div>
-          </header>
-          <div class="item">
-            <div class='gpa'> <strong></strong> <span></span>
-
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section margin1">
-      <header>
-        <h2 class='section-title'>Languages</h2>
-
-      </header>
-      <section id="languages">
-        <div class="display">
-          <h3 class="language">
-            English
-          </h3>
-
-          <div class="item">
-            <div class="level fluency fluent"> <em>Fluent</em>
-
-              <div class="bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="display">
-          <h3 class="language">
-            Hindi
-          </h3>
-
-          <div class="item">
-            <div class="level fluency master"> <em>Native</em>
-
-              <div class="bar"></div>
+            <div class="detail" id="interests">
+              <div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Interests</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    <li class="card card-nested">
+                      <p><strong>Traveling</strong></p>
+                      <div class="space-top labels"><span class="label label-keyword">Long drives</span><span
+                          class="label label-keyword">Mountains</span><span
+                          class="label label-keyword">Forests</span><span class="label label-keyword">Rivers</span><span
+                          class="label label-keyword">Ancient Forts &amp; Temples</span></div>
+                    </li>
+                    <li class="card card-nested">
+                      <p><strong>Podcasts</strong></p>
+                      <div class="space-top labels"><span class="label label-keyword">JavaScript</span><span
+                          class="label label-keyword">React JS</span><span class="label label-keyword">Software
+                          Development</span><span class="label label-keyword">Non-Tech</span></div>
+                    </li>
+                    <li class="card card-nested">
+                      <p><strong>Reading</strong></p>
+                      <div class="space-top labels"><span class="label label-keyword">Blogs</span><span
+                          class="label label-keyword">Tech News</span><span class="label label-keyword">Fictions</span>
+                      </div>
+                    </li>
+                    <li class="card card-nested">
+                      <p><strong>Movies</strong></p>
+                      <div class="space-top labels"><span class="label label-keyword">Animation</span><span
+                          class="label label-keyword">Hollywood</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </section>
-    <section class="section margin1">
-      <header>
-        <h2 class='section-title' class='section-title'>Interests</h2>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>$(function () {
+      var toggleFloatingMenu = function () {
+        $('.js-floating-nav').toggleClass('is-visible');
+        $('.js-floating-nav-trigger').toggleClass('is-open');
+      };
 
-      </header>
-      <section id="interests">
-        <div class="item">
-          <h3 class="name">
-            Traveling
-          </h3>
+      $(".background-card").css("min-height", window.screen.availHeight + "px");
+      $("[data-toggle=tooltip]").tooltip();
+      $('.js-floating-nav-trigger').on('click', function (e) {
+        e.preventDefault();
+        toggleFloatingMenu();
+      });
+      $('.js-floating-nav a').on('click', toggleFloatingMenu);
 
-          <ul class="keywords">
-            <li>Long drives</li>
-            <li>Mountains</li>
-            <li>Forests</li>
-            <li>Rivers</li>
-            <li>Ancient Temples &amp; Forts</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Podcasts
-          </h3>
+      $("#remaining-profiles").on('show.bs.collapse', function () {
+        $('.js-profiles-collapse > i')
+          .removeClass('icon-chevron-down')
+          .addClass('icon-chevron-up');
+      });
 
-          <ul class="keywords">
-            <li>JavaScript</li>
-            <li>React JS</li>
-            <li>Software Development</li>
-            <li>Non-Tech</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Reading
-          </h3>
-
-          <ul class="keywords">
-            <li>Blogs</li>
-            <li>Tech News</li>
-            <li>Fictions</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Movies
-          </h3>
-
-          <ul class="keywords">
-            <li>Animation</li>
-            <li>Hollywood</li>
-            <li>Tollywood</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+      $("#remaining-profiles").on('hidden.bs.collapse', function () {
+        $('.js-profiles-collapse > i')
+          .removeClass('icon-chevron-up')
+          .addClass('icon-chevron-down');
+      });
+    });
+  </script>
+  <script>WebFontConfig = {
+      google: { families: ['Lato:300,400,700:latin'] }
+    };
+    (function () {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();</script>
 </body>
 
 </html>

@@ -1,21 +1,23 @@
 {
-  "meta": {
-    "theme": "elegant"
-  },
   "basics": {
     "name": "Satyendra Singh",
     "label": "Fullstack JavaScript Engineer",
-    "image": "https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.jpg",
-    "picture": "https://raw.githubusercontent.com/satyendrachaudhary/satyendrachaudhary.github.io/main/image.jpg",
+    "image": "https://avatars.githubusercontent.com/u/8644434?v=4",
+    "picture": "https://avatars.githubusercontent.com/u/8644434?v=4",
     "email": "satyendraajm@live.com",
     "phone": "9782147996",
-    "website": "https://satyendrachaudhary.github.io/",
-    "summary": "I am a JavaScript enthusiast building and improving web world from last 8 years. Primarily I like to work with React, Express, Nest. Always open to learn something new. When I am not coding, I love to wander in wilderness.",
+    "website": "https://registry.jsonresume.org/satyendrachaudhary?theme=elegant",
+    "url": "https://registry.jsonresume.org/satyendrachaudhary?theme=elegant",
+    "summary": "Experienced JavaScript developer with 9 years in crafting high-quality, efficient, and scalable web applications. Proficient in React, Express and Nest, with a proven track record of delivering successful projects in a fast-paced environment.",
+    "blog": null,
+    "username": "satyendrachaudhary",
+    "locationAsString": "Jaipur, Rajasthan",
+    "region": "Jaipur, Rajasthan",
     "location": {
       "countryCode": "IN",
       "address": "",
       "city": "Jaipur",
-      "region": "rajasthan"
+      "region": "Rajasthan"
     },
     "profiles": [
       {
@@ -27,47 +29,109 @@
         "network": "LinkedIn",
         "url": "https://www.linkedin.com/in/satyendrachoudhary/",
         "username": "satyendrachoudhary"
+      },
+      {
+        "network": "gitconnected",
+        "username": "satyendrachaudhary",
+        "url": "https://gitconnected.com/satyendrachaudhary"
       }
     ],
-    "headline": "Full-stack JavaScript Engineer",
-    "yearsOfExperience": 8
+    "headline": "JavaScript Enthusiast",
+    "yearsOfExperience": 9
   },
   "work": [
     {
+      "name": "UBS India Pvt. Ltd.",
+      "company": "UBS India Pvt. Ltd.",
+      "location": "Pune, Maharashtra, India",
+      "position": "Full-stack Engineer",
+      "website": "https://www.ubs.com/in/en.html",
+      "url": "https://www.ubs.com/in/en.html",
+      "startDate": "2021-10-24",
+      "start": { "year": 2021, "month": 10 },
+      "end": {},
+      "summary": "UBS is one of the leading investment bank in the world.",
+      "highlights": [
+        "Tech Lead",
+        "Taking weekly interactive technical sessions"
+      ],
+      "isCurrentRole": true
+    },
+    {
+      "name": "FiftyFive Technologies",
       "company": "FiftyFive Technologies",
+      "location": "Jaipur, Rajasthan, India",
       "position": "Senior Software Engineer",
-      "website": "https://www.linkedin.com/company/40663997",
+      "website": "https://www.fiftyfivetech.io/",
+      "url": "https://www.fiftyfivetech.io/",
       "startDate": "2020-03-31",
       "endDate": "2021-10-08",
-      "summary": "Primarily working on all kinds of JS based technologies and frameworks.",
-      "highlights": []
+      "start": { "year": 2020, "month": 3 },
+      "end": { "year": 2021, "month": 10 },
+      "summary": "FFT outsources offshore/onshore high quality services.",
+      "highlights": [
+        "Tech Lead",
+        "Client Communication",
+        "Intern management",
+        "JavaScript / React",
+        "Node / Express / Nest",
+        "Docker",
+        "Go / HuGo"
+      ],
+      "isCurrentRole": false
     },
     {
+      "name": "Pratham Software (PSI)",
       "company": "Pratham Software (PSI)",
+      "location": "Jaipur, Rajasthan, India",
       "position": "Senior Software Engineer",
-      "website": "https://www.linkedin.com/company/208203",
+      "website": "https://www.thepsi.com/",
+      "url": "https://www.thepsi.com/",
       "startDate": "2017-05-31",
       "endDate": "2020-02-28",
-      "summary": "Worked as JS(Backbone, Node/Express) developer",
-      "highlights": []
+      "start": { "year": 2017, "month": 5 },
+      "end": { "year": 2020, "month": 2 },
+      "summary": "PSI is a global provider of software solutions and consulting services.",
+      "highlights": [
+        "JavaScript / Backbone / React",
+        "Node / Express / Hapi",
+        "Client Communication"
+      ],
+      "isCurrentRole": false
     },
     {
+      "name": "Systweak Software",
       "company": "Systweak Software",
+      "location": "Jaipur, Rajasthan, India",
       "position": "PHP Developer",
-      "website": "https://www.linkedin.com/company/3739341",
+      "website": "https://www.systweak.com/",
+      "url": "https://www.systweak.com/",
       "startDate": "2015-04-30",
       "endDate": "2017-05-31",
-      "summary": "Worked as CakePHP developer",
-      "highlights": []
+      "start": { "year": 2015, "month": 4 },
+      "end": { "year": 2017, "month": 5 },
+      "summary": "Systweak is a global software company which provides software and services.",
+      "highlights": [
+        "ERP solution for company's requirements",
+        "Attendance management via physical RFID cards",
+        "Various Product landing pages"
+      ],
+      "isCurrentRole": false
     },
     {
-      "company": "WeDig Tech solutions Private Limited",
+      "name": "WeDig Tech Solutions Private Limited",
+      "company": "WeDig Tech Solutions Private Limited",
+      "location": "Jaipur, Rajasthan, India",
       "position": "CakePHP Developer",
-      "website": "https://www.linkedin.com/company/1498793",
+      "website": "https://www.wedigtech.com/",
+      "url": "https://www.wedigtech.com/",
       "startDate": "2014-03-31",
       "endDate": "2015-03-31",
-      "summary": "Worked as CakePHP & Sencha developer",
-      "highlights": []
+      "start": { "year": 2014, "month": 3 },
+      "end": { "year": 2015, "month": 3 },
+      "summary": "WeDig incorporates the latest trends and technologies to provide holistic solutions.",
+      "highlights": ["CakePHP", "Sencha Touch", "Hybrid mobile apps"],
+      "isCurrentRole": false
     }
   ],
   "volunteer": [],
@@ -75,7 +139,7 @@
     {
       "institution": "Suresh Gyan Vihar University",
       "url": "https://www.gyanvihar.org/",
-      "area": "Computer Science",
+      "area": "Computer Applications",
       "studyType": "Master of Computer Application",
       "startDate": "2010-08-01",
       "endDate": "2013-05-01",
@@ -83,21 +147,15 @@
       "courses": [],
       "description": "",
       "activities": "",
-      "start": {
-        "year": 2010,
-        "month": 8
-      },
-      "end": {
-        "year": 2013,
-        "month": 5
-      },
+      "start": { "year": 2010, "month": 8 },
+      "end": { "year": 2013, "month": 5 },
       "website": "https://www.gyanvihar.org/",
       "gpa": "7.45"
     },
     {
-      "institution": "Management And Commerce Institute Of Global Synergy",
-      "url": "",
-      "area": "Computer Science",
+      "institution": "Maharshi Dayanand Saraswati University",
+      "url": "https://www.mdsuajmer.ac.in/",
+      "area": "Computer Applications",
       "studyType": "Bachelor of Computer Application",
       "startDate": "2007-08-01",
       "endDate": "2010-05-01",
@@ -105,15 +163,9 @@
       "courses": [],
       "description": "",
       "activities": "",
-      "start": {
-        "year": 2007,
-        "month": 8
-      },
-      "end": {
-        "year": 2010,
-        "month": 5
-      },
-      "website": "",
+      "start": { "year": 2007, "month": 8 },
+      "end": { "year": 2010, "month": 5 },
+      "website": "https://www.mdsuajmer.ac.in/",
       "gpa": "70%"
     },
     {
@@ -127,14 +179,8 @@
       "courses": [],
       "description": "",
       "activities": "",
-      "start": {
-        "year": 2000,
-        "month": 7
-      },
-      "end": {
-        "year": 2007,
-        "month": 5
-      },
+      "start": { "year": 2000, "month": 7 },
+      "end": { "year": 2007, "month": 5 },
       "website": "https://www.rieajmer.raj.nic.in/Home/HomePage.aspx",
       "gpa": ""
     }
@@ -143,111 +189,83 @@
   "publications": [],
   "skills": [
     {
-      "name": "JavaScript",
+      "name": "Frontend",
       "level": "Master",
       "keywords": [
-        "React",
-        "Express",
-        "Nest",
-        "Backbone",
-        "Angular",
-        "Knockout",
-        "Lodash",
-        "jQuery"
+        "HTML / JSX",
+        "CSS / SCSS / BEM / Styled Components",
+        "Javascript / Typescript",
+        "React / Next",
+        "Redux / Redux Toolkit",
+        "GraphQL / Apollo",
+        "Lodash / jQuery"
       ],
       "rating": 5,
-      "yearsOfExperience": 8
+      "yearsOfExperience": 9
     },
     {
-      "name": "PHP",
-      "level": "Advanced",
+      "name": "Backend",
+      "level": "Master",
       "keywords": [
-        "Core",
-        "CakePHP",
-        "Symfony",
-        "Laravel",
-        "CodeIgnitor"
+        "Node / Express / Nest",
+        "PHP / Symfony / Laravel",
+        "MySQL / Graph DB(Gremlin API) / SQLLite3 / Mongo / Firebase"
       ],
-      "rating": 4,
-      "yearsOfExperience": 6
+      "rating": 5,
+      "yearsOfExperience": 9
     },
     {
       "name": "DevOps",
       "level": "Beginner",
-      "keywords": [
-        "Docker"
-      ],
+      "keywords": ["Docker", "Jenkins", "Azure", "Caching"],
       "rating": 2,
-      "yearsOfExperience": 1
+      "yearsOfExperience": 2
     },
     {
       "name": "Git",
-      "level": "Advanced",
-      "keywords": [
-        "CLI",
-        "Sublime Merge",
-        "Github Desktop",
-        "GitLens"
-      ],
+      "level": "Master",
+      "keywords": ["CLI", "Sublime Merge", "Github Desktop", "GitLens"],
       "rating": 4,
       "yearsOfExperience": 5
-    },
-    {
-      "name": "Text Editors",
-      "level": "Advanced",
-      "keywords": [
-        "VS Code",
-        "Sublime Text 3"
-      ],
-      "rating": 4,
-      "yearsOfExperience": 6
-    },
-    {
-      "name": "Database",
-      "level": "Advanced",
-      "keywords": [
-        "MySQL",
-        "PgSQL",
-        "Firebase",
-        "Mongo",
-        "SQLLite3"
-      ],
-      "rating": 4,
-      "yearsOfExperience": 8
-    },
-    {
-      "name": "Other Tools",
-      "level": "Intermediate",
-      "keywords": [
-        "pgAdmin",
-        "SqlYog",
-        "PuTTY",
-        "Pageant",
-        "WinSCP"
-      ],
-      "rating": 3,
-      "yearsOfExperience": 8
     }
   ],
   "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Hindi",
-      "fluency": "Native"
-    }
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Hindi", "fluency": "Native" }
   ],
   "projects": [
     {
-      "name": "Gelato",
-      "description": "A fully integrated solution for customized print products.",
+      "name": "Arena",
+      "description": "A gamification platform for UBS employees to collaborate with each other in various online/offline events.",
       "highlights": [
-        "Moved stock management from external platform(Sanity) to internal application module."
+        "Tech Lead",
+        "Bringed down infra cost by 46% by optimizing code and services within a year.",
+        "Rewrote two of four core feature of the application single-handedly in 2 quaters.",
+        "Introduced clean code practices and best practices to the application, which resulted in a more maintainable codebase.",
+        "Create dozens of critical components in a short span of time. Which brought the application to a new level of performance with less bugs and development time to hours from weeks."
+      ],
+      "keywords": [
+        "React / UWR / Redux / RTK Query / MSAL AAD",
+        "Node / Express",
+        "Graph DB / Gremlin API / Cosmos DB",
+        "Azure cloud services"
+      ],
+      "startDate": "2021-10-24",
+      "url": "",
+      "roles": ["Full-stack Engineer"],
+      "entity": "Entity",
+      "type": "application"
+    },
+    {
+      "name": "Gelato",
+      "description": "A fully integrated solution for customized printed products.",
+      "highlights": [
+        "Migration of stock management from external platform(Sanity) to internal infra.",
+        "Reverse-engineered and created stock management APIs."
       ],
       "keywords": [
         "Symfony 3",
+        "Sanity",
         "Docker",
         "Postgres",
         "Terraform",
@@ -255,32 +273,31 @@
         "Sentry"
       ],
       "startDate": "2021-05-01",
+      "endDate": "2021-10-08",
       "url": "https://www.gelato.com/",
-      "roles": [
-        "Senior Software Engineer"
-      ],
+      "roles": ["Senior Software Engineer"],
       "entity": "Entity",
       "type": "application"
     },
     {
       "name": "Qopla",
-      "description": "Food ordering(for customers) and order management tool(for restaurants)",
+      "description": "Food ordering app for end users and order management tool for restaurant staff.",
       "highlights": [
-        "Integrated Delivery Hero platform with Qopla for accepting orders."
+        "Integrated Delivery Hero(DH) platform with Qopla for accepting orders.",
+        "Automated order management for restaurants using DH.",
+        "Also update DH with the latest order status."
       ],
       "keywords": [
+        "React",
         "Nest JS",
         "MongoDB",
         "Delivery Hero",
-        "React",
-        "Java"
+        "Java / Spring Boot"
       ],
       "startDate": "2021-03-01",
       "endDate": "2021-04-30",
       "url": "https://www.qopla.com/",
-      "roles": [
-        "Solution Architect"
-      ],
+      "roles": ["Solution Architect", "Backend Engineer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -288,45 +305,33 @@
       "name": "Nord FondKommission",
       "description": "Tool to suggest and manage customer’s financial profile.",
       "highlights": [
-        "Worked on mission critical features like contract document creation automation module based on user inputs."
+        "Upgraded mission critical feature - automatic contract document creation on user inputs."
       ],
-      "keywords": [
-        "React",
-        "Bootstrap",
-        "Slim PHP",
-        "Assently",
-        "BrickNode"
-      ],
+      "keywords": ["React  / Bootstrap", "Slim PH / Assently / BrickNode"],
       "startDate": "2020-07-01",
       "endDate": "2020-12-31",
       "url": "https://nordfk.se/sv/",
-      "roles": [
-        "Tech Lead",
-        "Senior Software Engineer"
-      ],
+      "roles": ["Tech Lead", "Full-stack Engineer"],
       "entity": "Entity",
       "type": "application",
       "teamSize": 5
     },
     {
-      "name": "Admin Portal",
+      "name": "Admin Portal | MyUplink",
       "description": "Admin tool to manage HVAC systems(and related users, companies, brands, and devices) of 70+ manufacturing companies under Nibe branding.",
       "highlights": [
-        "Bootstrapped project single-handedly"
+        "Bootstrapped project single-handedly",
+        "Create dozens of critical and reusable components to reduce development time"
       ],
       "keywords": [
-        "React JS",
-        "Material UI",
+        "React / Material UI / Swagger",
         "MS Service Fabric",
         "Azure cloud services"
       ],
       "startDate": "2020-03-02",
-      "endDate": "2021-04-30",
+      "endDate": "2021-04-31",
       "url": "https://admin.myuplink.com",
-      "roles": [
-        "Project Manager",
-        "Senior Software Engineer"
-      ],
+      "roles": ["Project Manager", "Senior Software Engineer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -334,20 +339,19 @@
       "name": "MyUplink & MyUplink Pro",
       "description": "Client tool to manage HVAC systems of 70+ manufacturing companies under Nibe branding.",
       "highlights": [
-        "Delivered critical features grouping, scheduling and system diagram."
+        "Delivered critical modules grouping, scheduling and system diagrams.",
+        "Created Virtual device using Electron for development & testing purposes."
       ],
       "keywords": [
-        "React JS",
-        "Bootstrap",
+        "React / Bootstrap",
+        "Node / Express / Electron",
         "MS Service Fabric",
         "Azure cloud services"
       ],
       "startDate": "2020-06-01",
       "endDate": "2021-04-30",
       "url": "https://pro.myuplink.com",
-      "roles": [
-        "Senior Software Engineer"
-      ],
+      "roles": ["Senior Frontend Engineer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -355,24 +359,19 @@
       "name": "Hinstant",
       "description": "Hotel products / services promotion automation tool.",
       "highlights": [
-        "Moved promotion emails from manual to an automated AI/ML scores based process.",
-        "Updated Parser to support booking receipt from Booking, Expedia and similar platforms."
+        "Automated email promotions based on AI/ML scores.",
+        "Add email parsers to support booking receipt from Booking.com, Expedia and similar platforms."
       ],
       "keywords": [
-        "CI with Pyro CMS",
-        "Express JS",
-        "MySQL",
-        "MongoDB",
+        "Express / CI with Pyro CMS",
+        "MySQL / MongoDB",
         "Jenkins",
-        "AI-ML"
+        "AI-ML(Sagemaker)"
       ],
       "startDate": "2019-11-01",
       "endDate": "2020-02-28",
       "url": "https://www.hinstant.com/",
-      "roles": [
-        "Project Manager",
-        "Senior Software Engineer"
-      ],
+      "roles": ["Project Manager", "Senior Software Engineer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -380,24 +379,19 @@
       "name": "BeIntent",
       "description": "Physical & Mental Wellbeing tool.",
       "highlights": [
-        "Worked on gamification of application",
-        "Added SVG based Avatar maker."
+        "Added SVG based Avatar maker.",
+        "Delivered gamification features for the application.",
+        "Multiple visual reports with ChartJS which can dowloaded and sent as email too."
       ],
       "keywords": [
-        "Backbone JS",
-        "Bootstrap",
-        "Symfony 1 & 2",
-        "Symfony 4",
-        "Grunt",
-        "PostgreSQL",
-        "MongoDB"
+        "Backbone / Bootstrap / Grunt",
+        "Symfony / Microservice / Soap services for DB",
+        "PostgreSQL / MongoDB"
       ],
       "startDate": "2017-12-09",
       "endDate": "2019-10-31",
       "url": "https://www.beintent.com/",
-      "roles": [
-        "Senior Software Engineer"
-      ],
+      "roles": ["Senior Software Engineer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -405,37 +399,26 @@
       "name": "RAK Wireless",
       "description": "Product catalogue for IoT and networking devices.",
       "highlights": [
-        "Created documentation and download centre based on AWS S3 file architecture."
+        "Product landing pages",
+        "Automatic documentation and download centre based on AWS S3 file architecture."
       ],
-      "keywords": [
-        "Express JS",
-        "Bootstrap",
-        "AWS S3"
-      ],
+      "keywords": ["Bootstrap", "Node / Express", "AWS S3"],
       "startDate": "2018-01-01",
       "endDate": "2020-02-28",
       "url": "https://www.rakwireless.com/",
-      "roles": [
-        "Software Engineer"
-      ],
+      "roles": ["Senior Software Engineer"],
       "entity": "Entity",
       "type": "application"
     },
     {
       "name": "Vault IQ",
-      "description": "Risk & EHS Software.",
+      "description": "Risk & EHS software solution.",
       "highlights": [],
-      "keywords": [
-        "Zend framework",
-        "MSSQL",
-        "jQuery"
-      ],
+      "keywords": ["Bootstrap", "jQuery", "Zend framework", "MSSQL"],
       "startDate": "2017-05-22",
       "endDate": "2017-12-08",
       "url": "https://www.vaultintel.com/",
-      "roles": [
-        "Senior Developer"
-      ],
+      "roles": ["Senior Developer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -443,14 +426,14 @@
       "name": "OnePlace",
       "description": "ERP solution",
       "highlights": [
-        "Employee Onboarding(from vendor referral to training)",
         "Physical RFID card based attendance capture",
-        "Employee shift management in 24x7 environment with 3 shifts everyday",
-        "Leave management with 2 level of escalations where everything is configurable",
-        "Salary slip management(Import, encrypt, organize for future access where only employees can se their salary slips). ",
+        "Employee Onboarding(from vendor referral to training)",
+        "Employee shift management in 24x7 environment with 3 shifts per day",
+        "Leave management with configurable multi-level escalations",
         "Employee document management with encryption",
-        "Transport management(in association with Move In Sync)",
-        "Training module",
+        "Salary slips management(Import, encrypt, organization for future private access). ",
+        "Transport management(in association with 'Move In Sync')",
+        "Training modules",
         "ACL based user authorization"
       ],
       "keywords": [
@@ -464,10 +447,7 @@
       "startDate": "2015-11-01",
       "endDate": "2017-05-19",
       "url": "-",
-      "roles": [
-        "Project Manager",
-        "Senior Developer"
-      ],
+      "roles": ["Project Manager", "Senior Developer"],
       "entity": "Entity",
       "type": "application"
     },
@@ -475,8 +455,8 @@
       "name": "UMMS Portal",
       "description": "Complete ERP Solution for Unimarship(A vessel management Company).",
       "highlights": [
-        "Stock procurements",
-        "Vendor/Supplier management"
+        "Automated Vendor/Supplier management.",
+        "Automated stock procurements, shipments, invoices, and other processes."
       ],
       "keywords": [
         "CakePHP",
@@ -489,49 +469,99 @@
       "startDate": "2015-02-01",
       "endDate": "2015-03-30",
       "url": "https://www.intuitships-umms.com",
-      "roles": [
-        "Junior Developer"
-      ],
+      "roles": ["Junior Developer"],
       "entity": "Entity",
       "type": "application"
     }
   ],
   "interests": [
     {
-      "name": "Travelling",
+      "name": "Traveling",
       "keywords": [
         "Long drives",
         "Mountains",
         "Forests",
         "Rivers",
-        "Ancient Temples & Forts"
+        "Ancient Forts & Temples"
       ]
     },
     {
       "name": "Podcasts",
-      "keywords": [
-        "JavaScript",
-        "React",
-        "Software Development",
-        "Non-Tech"
-      ]
+      "keywords": ["JavaScript", "React JS", "Software Development", "Non-Tech"]
     },
     {
       "name": "Reading",
-      "keywords": [
-        "Blogs",
-        "Tech News",
-        "Fictions"
-      ]
+      "keywords": ["Blogs", "Tech News", "Fictions"]
     },
     {
       "name": "Movies",
-      "keywords": [
-        "Animation",
-        "Hollywood",
-        "Bollywood"
-      ]
+      "keywords": ["Animation", "Hollywood"]
     }
   ],
-  "references": []
+  "references": [],
+  "certificates": [
+    {
+      "name": "Agile Project Management; Agile Delivery",
+      "issuer": "Udemy",
+      "date": "2022-06-01",
+      "url": "https://ude.my/UC-0e7c7a1e-08b3-4314-b23e-1ce9269fef85/",
+      "summary": "",
+      "fullDate": { "year": 2022, "month": 6, "day": 1 },
+      "website": "https://ude.my/UC-0e7c7a1e-08b3-4314-b23e-1ce9269fef85/"
+    },
+    {
+      "name": "Advanced React Component Patterns",
+      "issuer": "Udemy",
+      "date": "2022-04-01",
+      "url": "https://ude.my/UC-27d2b9df-db67-4fe0-a29b-a5173bf865be/",
+      "summary": "",
+      "fullDate": { "year": 2022, "month": 4, "day": 1 },
+      "website": "https://ude.my/UC-27d2b9df-db67-4fe0-a29b-a5173bf865be/"
+    },
+    {
+      "name": "JavaScript Algorithms & Data Structure",
+      "issuer": "Free Code Camp",
+      "date": "2019-10-24",
+      "url": "https://www.freecodecamp.org/certification/satyendrachaudhary/javascript-algorithms-and-data-structures",
+      "summary": "",
+      "fullDate": { "year": 2019, "month": 10, "day": 24 },
+      "website": "https://www.freecodecamp.org/certification/satyendrachaudhary/javascript-algorithms-and-data-structures"
+    },
+    {
+      "name": "Node.js",
+      "issuer": "CutShort",
+      "date": "2020-01-09",
+      "url": "https://cutshort.io/certificate/797",
+      "summary": "",
+      "fullDate": { "year": 2020, "month": 1, "day": 9 },
+      "website": "https://cutshort.io/certificate/797"
+    },
+    {
+      "name": "JavaScript",
+      "issuer": "SoloLearn",
+      "date": "2016-11-01",
+      "url": "https://www.sololearn.com/profile/1125245/",
+      "summary": "",
+      "fullDate": { "year": 2016, "month": 11, "day": 1 },
+      "website": "https://www.sololearn.com/profile/1125245/"
+    },
+    {
+      "name": "HTML",
+      "issuer": "SoloLearn",
+      "date": "2016-11-01",
+      "url": "https://www.sololearn.com/profile/1125245/",
+      "summary": "",
+      "fullDate": { "year": 2016, "month": 11, "day": 1 },
+      "website": "https://www.sololearn.com/profile/1125245/"
+    },
+    {
+      "name": "SQL",
+      "issuer": "SoloLearn",
+      "date": "2016-11-01",
+      "url": "http://www.sololearn.com/Profile/1125245/",
+      "summary": "",
+      "fullDate": { "year": 2016, "month": 11, "day": 1 },
+      "website": "http://www.sololearn.com/Profile/1125245/"
+    }
+  ]
 }
